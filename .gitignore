@@ -1,0 +1,17 @@
+# plot files
+*.png
+
+# data files 
+*.hd5
+*.mat 
+*.npy
+*.tar
+*.csv
+*.nwb
+*.conda
+*.ipynb_checkpoints
+ppp0/data/
+
+# output files
+*.out
+*.bak
