@@ -10,7 +10,11 @@
 *.nwb
 *.conda
 *.ipynb_checkpoints
+
+# Folders 
 ppp0/data/
+csa/
+__pycache__
 
 # output files
 *.out

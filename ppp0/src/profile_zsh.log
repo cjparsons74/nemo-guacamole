@@ -1,0 +1,2097 @@
+num  calls                time                       self            name
+-----------------------------------------------------------------------------------
+ 1)    1        7738.70  7738.70   58.14%   5620.15  5620.15   42.22%  compinit
+ 2)  806        1928.87     2.39   14.49%   1928.87     2.39   14.49%  compdef
+ 3)    1        1613.83  1613.83   12.12%   1581.12  1581.12   11.88%  .autocomplete.up-line-or-search.zle-widget
+ 4)   62        1354.50    21.85   10.18%   1343.52    21.67   10.09%  _zsh_autosuggest_async_request
+ 5)   65         673.43    10.36    5.06%    673.43    10.36    5.06%  .autocomplete.async.start
+ 6)  315         253.89     0.81    1.91%    229.50     0.73    1.72%  compadd
+ 7)   45         868.16    19.29    6.52%    205.57     4.57    1.54%  .autocomplete.async.complete.fd-widget
+ 8)    1         152.82   152.82    1.15%    152.82   152.82    1.15%  compdump
+ 9)    1         210.57   210.57    1.58%    151.31   151.31    1.14%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:3]
+10)    2         155.34    77.67    1.17%    149.09    74.54    1.12%  (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50]
+11)  146         201.35     1.38    1.51%     88.76     0.61    0.67%  _path_files
+12)    2          68.79    34.39    0.52%     68.79    34.39    0.52%  .autocomplete.async
+13)   45         662.59    14.72    4.98%     62.45     1.39    0.47%  .autocomplete.async.complete.fd-widget.inner
+14)    1          58.51    58.51    0.44%     55.57    55.57    0.42%  _p9k_preinit
+15)   66          63.46     0.96    0.48%     52.74     0.80    0.40%  -fast-highlight-process
+16)    2          36.86    18.43    0.28%     36.86    18.43    0.28%  compaudit
+17)    1          34.99    34.99    0.26%     34.99    34.99    0.26%  _p9k_dump_state
+18)   73         802.26    10.99    6.03%     34.64     0.47    0.26%  azhw:zle-line-pre-redraw
+19)  245          48.72     0.20    0.37%     33.98     0.14    0.26%  _description
+20)    1          32.78    32.78    0.25%     32.69    32.69    0.25%  (anon) [:597]
+21)    2         142.04    71.02    1.07%     30.23    15.12    0.23%  .autocomplete.__init__
+22)   34         585.20    17.21    4.40%     26.60     0.78    0.20%  autocomplete:_main_complete:old
+23)    4          24.77     6.19    0.19%     24.77     6.19    0.19%  .autocomplete.patch
+24)    2          24.40    12.20    0.18%     24.22    12.11    0.18%  .autocomplete.widget
+25)   69          56.48     0.82    0.42%     21.79     0.32    0.16%  _p9k_widget_hook
+26)  423          21.44     0.05    0.16%     21.44     0.05    0.16%  _tags
+27)   64          21.41     0.33    0.16%     21.41     0.33    0.16%  _p9k_parse_buffer
+28)  138         100.73     0.73    0.76%     20.08     0.15    0.15%  _zsh_highlight
+29)   21          20.01     0.95    0.15%     20.01     0.95    0.15%  .autocomplete.key-binding.bound
+30)  128          19.99     0.16    0.15%     19.99     0.16    0.15%  alias_if_exists
+31)  279          19.10     0.07    0.14%     19.10     0.07    0.14%  _setup
+32)   73         284.47     3.90    2.14%     18.98     0.26    0.14%  _files
+33)   73        1730.62    23.71   13.00%     18.82     0.26    0.14%  _zsh_autosuggest_invoke_original_widget
+34)   67          16.11     0.24    0.12%     16.11     0.24    0.12%  is-at-least
+35)   73         301.00     4.12    2.26%     15.36     0.21    0.12%  _dispatch
+36)   62          27.50     0.44    0.21%     14.66     0.24    0.11%  _zsh_autosuggest_async_response
+37)  277          14.27     0.05    0.11%     14.27     0.05    0.11%  .autocomplete.compadd
+38)   75         714.42     9.53    5.37%     13.05     0.17    0.10%  .autocomplete.async.complete
+39)    1          16.55    16.55    0.12%     12.79    12.79    0.10%  .autocomplete.recent-dirs.precmd
+40)  292          41.34     0.14    0.31%     12.46     0.04    0.09%  _next_label
+41)    2          14.61     7.31    0.11%     12.21     6.10    0.09%  _autocomplete.history_lines
+42)  121          11.55     0.10    0.09%     11.55     0.10    0.09%  .autocomplete.zle-flags
+43)   71        3114.56    43.87   23.40%     10.50     0.15    0.08%  _zsh_autosuggest_widget_modify
+44)  277          10.12     0.04    0.08%     10.12     0.04    0.08%  zsh_math_func_max
+45)   71        3097.42    43.63   23.27%     10.03     0.14    0.08%  _zsh_autosuggest_modify
+46)    2           8.83     4.41    0.07%      8.83     4.41    0.07%  _p9k_must_init
+47)  355           8.78     0.02    0.07%      8.78     0.02    0.07%  _p9k_display_segment
+48)  191          12.10     0.06    0.09%      8.60     0.05    0.06%  _zsh_autosuggest_bind_widget
+49)   45         156.67     3.48    1.18%      8.16     0.18    0.06%  _autocomplete.ancestor_dirs
+50)    2           8.06     4.03    0.06%      8.06     4.03    0.06%  _zsh_highlight_bind_widgets
+51)   46          37.49     0.82    0.28%      7.59     0.17    0.06%  _autocomplete.recent_paths
+52)   34         594.14    17.47    4.46%      7.58     0.22    0.06%  autocomplete:_main_complete:new
+53)  251           7.50     0.03    0.06%      7.50     0.03    0.06%  _have_glob_qual
+54)   45         596.76    13.26    4.48%      7.33     0.16    0.06%  .autocomplete.async.list-choices.completion-widget
+55)   45           7.30     0.16    0.05%      7.30     0.16    0.05%  +autocomplete:recent-directories
+56)  135           7.06     0.05    0.05%      7.06     0.05    0.05%  _zsh_autosuggest_highlight_reset
+57)   34          14.81     0.44    0.11%      7.04     0.21    0.05%  autocomplete:_main_complete:new:post
+58)   73          61.68     0.84    0.46%      7.00     0.10    0.05%  _p9k_widget_zle-line-pre-redraw-impl
+59)   14           6.88     0.49    0.05%      6.88     0.49    0.05%  add-zsh-hook
+60)   66           6.66     0.10    0.05%      6.66     0.10    0.05%  -fast-highlight-string-process
+61)    1           6.65     6.65    0.05%      6.65     6.65    0.05%  _p9k_dump_instant_prompt
+62)    2          27.90    13.95    0.21%      6.51     3.26    0.05%  .autocomplete.history-search.completion-widget
+63)   45         979.40    21.76    7.36%      6.39     0.14    0.05%  _zsh_autosuggest_bound_1_self-insert
+64)   70          91.27     1.30    0.69%      6.28     0.09    0.05%  _zsh_highlight_call_widget
+65)    1        7769.78  7769.78   58.37%      6.20     6.20    0.05%  .autocomplete.compinit.precmd
+66)   33         587.39    17.80    4.41%      5.85     0.18    0.04%  .autocomplete.async.list-choices.main-complete
+67)   33           5.84     0.18    0.04%      5.84     0.18    0.04%  (anon) [:432]
+68)  180           5.75     0.03    0.04%      5.75     0.03    0.04%  _zsh_autosuggest_highlight_apply
+69)   66           5.70     0.09    0.04%      5.70     0.09    0.04%  -fast-highlight-main-type
+70)   62          12.84     0.21    0.10%      5.66     0.09    0.04%  _zsh_autosuggest_widget_suggest
+71)   68           5.45     0.08    0.04%      5.45     0.08    0.04%  .autocomplete.async.stop
+72)  130           7.52     0.06    0.06%      5.45     0.04    0.04%  _zsh_highlight_buffer_modified
+73)    1          17.32    17.32    0.13%      5.22     5.22    0.04%  _zsh_autosuggest_bind_widgets
+74)   73         316.24     4.33    2.38%      5.09     0.07    0.04%  autocomplete:_complete:old
+75)   57           5.02     0.09    0.04%      5.02     0.09    0.04%  -fast-highlight-check-path
+76)   10           4.80     0.48    0.04%      4.80     0.48    0.04%  _p9k_worker_receive
+77)   62        1358.56    21.91   10.21%      4.06     0.07    0.03%  _zsh_autosuggest_fetch
+78)   49           3.87     0.08    0.03%      3.87     0.08    0.03%  _list_files
+79)   61         239.67     3.93    1.80%      3.83     0.06    0.03%  _redirect
+80)    1           3.68     3.68    0.03%      3.68     3.68    0.03%  chpwd_recent_filehandler
+81)   45          14.31     0.32    0.11%      3.51     0.08    0.03%  .autocomplete.recent_paths.add
+82)  191           3.50     0.02    0.03%      3.50     0.02    0.03%  _zsh_autosuggest_incr_bind_count
+83)   34           7.77     0.23    0.06%      3.31     0.10    0.02%  _autocomplete.unambiguous
+84)   73          64.99     0.89    0.49%      3.31     0.05    0.02%  _p9k_widget_zle-line-pre-redraw
+85)    3          10.01     3.34    0.08%      3.30     1.10    0.02%  _p9k_set_prompt
+86)    2           3.61     1.81    0.03%      3.29     1.64    0.02%  (anon) [/Users/duuta/.p10k.zsh:21]
+87)   17           3.19     0.19    0.02%      3.19     0.19    0.02%  _requested
+88)   73         513.45     7.03    3.86%      3.05     0.04    0.02%  _complete
+89)   66           2.93     0.04    0.02%      2.93     0.04    0.02%  -fast-highlight-init
+90)   45          63.25     1.41    0.48%      2.84     0.06    0.02%  _zsh_highlight_widget_orig-s000-r519-self-insert
+91)   23         526.40    22.89    3.95%      2.82     0.12    0.02%  _zsh_autosuggest_bound_1_vi-backward-delete-char
+92)   73           2.80     0.04    0.02%      2.80     0.04    0.02%  _set_command
+93)    1           2.77     2.77    0.02%      2.77     2.77    0.02%  _p9k_restore_state_impl
+94)    1           2.59     2.59    0.02%      2.59     2.59    0.02%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:597]
+95)   10          31.73     3.17    0.24%      2.56     0.26    0.02%  _approximate
+96)    8           2.39     0.30    0.02%      2.39     0.30    0.02%  _prefix
+97)   69           2.38     0.03    0.02%      2.38     0.03    0.02%  _p9k_deschedule_redraw
+98)   62           2.37     0.04    0.02%      2.37     0.04    0.02%  _zsh_autosuggest_suggest
+99)   73           2.20     0.03    0.02%      2.20     0.03    0.02%  _first
+100)   69           2.20     0.03    0.02%      2.20     0.03    0.02%  _p9k_check_visual_mode
+101)    1           2.14     2.14    0.02%      2.14     2.14    0.02%  .autocomplete.config.precmd
+102)   66           2.08     0.03    0.02%      2.08     0.03    0.02%  _zsh_highlight_cursor_moved
+103)   45           2.03     0.05    0.02%      2.03     0.05    0.02%  .autocomplete.async.sufficient-input
+104)   33           2.95     0.09    0.02%      1.77     0.05    0.01%  .autocomplete.async.list-choices.max-lines
+105)   15           4.15     0.28    0.03%      1.65     0.11    0.01%  _p9k_on_expand
+106)   45           1.65     0.04    0.01%      1.65     0.04    0.01%  .autocomplete.recent_paths.trim
+107)    1           1.62     1.62    0.01%      1.62     1.62    0.01%  _p9k_clear_instant_prompt
+108)   20          20.73     1.04    0.16%      1.47     0.07    0.01%  .autocomplete.key-binding.rebind
+109)   10           1.51     0.15    0.01%      1.46     0.15    0.01%  add-zle-hook-widget
+110)    8           1.45     0.18    0.01%      1.45     0.18    0.01%  _ignored
+111)   23          31.11     1.35    0.23%      1.34     0.06    0.01%  _zsh_highlight_widget_orig-s000-r519-vi-backward-delete-char
+112)   12          69.27     5.77    0.52%      1.32     0.11    0.01%  _normal
+113)   34           1.26     0.04    0.01%      1.26     0.04    0.01%  .autocomplete.key-binding.bind
+114)    2           6.77     3.39    0.05%      1.24     0.62    0.01%  azhw:zle-line-finish
+115)    3           2.16     0.72    0.02%      1.23     0.41    0.01%  prompt_dir
+116)    2          58.86    29.43    0.44%      1.21     0.61    0.01%  _p9k_precmd_impl
+117)   33           1.19     0.04    0.01%      1.19     0.04    0.01%  zsh_math_func_min
+118)   12          64.55     5.38    0.48%      1.17     0.10    0.01%  _default
+119)   33           1.13     0.03    0.01%      1.13     0.03    0.01%  (anon) [:111]
+120)   33           1.07     0.03    0.01%      1.07     0.03    0.01%  _p9k_cache_get
+121)   33           1.00     0.03    0.01%      1.00     0.03    0.01%  autocomplete:config:completer
+122)    8          18.87     2.36    0.14%      0.96     0.12    0.01%  _correct
+123)    1          39.59    39.59    0.30%      0.90     0.90    0.01%  _p9k_init
+124)   10           0.89     0.09    0.01%      0.89     0.09    0.01%  _autocomplete.is_glob
+125)    4           0.83     0.21    0.01%      0.83     0.21    0.01%  _p9k_prompt_length
+126)    2          12.66     6.33    0.10%      0.81     0.41    0.01%  .autocomplete.key-binding
+127)    2          13.46     6.73    0.10%      0.76     0.38    0.01%  azhw:zle-line-init
+128)    1           0.88     0.88    0.01%      0.75     0.75    0.01%  _p9k_worker_start
+129)   21           1.55     0.07    0.01%      0.66     0.03    0.00%  _p9k_right_prompt_segment
+130)    1           3.36     3.36    0.03%      0.59     0.59    0.00%  _p9k_restore_state
+131)    2           5.41     2.71    0.04%      0.59     0.29    0.00%  .autocomplete.config
+132)   29           2.75     0.09    0.02%      0.57     0.02    0.00%  _p9k_prompt_segment
+133)   10          28.28     2.83    0.21%      0.52     0.05    0.00%  autocomplete:_approximate:old
+134)    2           0.52     0.26    0.00%      0.52     0.26    0.00%  (anon) [/Users/duuta/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh:458]
+135)    2           0.48     0.24    0.00%      0.48     0.24    0.00%  _p9k_fetch_cwd
+136)    2          35.84    17.92    0.27%      0.47     0.23    0.00%  gitstatus_start_p9k_
+137)   14           1.46     0.10    0.01%      0.46     0.03    0.00%  .autocomplete.key-binding.bind-menu
+138)    1          11.81    11.81    0.09%      0.46     0.46    0.00%  .autocomplete.key-binding.precmd
+139)    3           0.40     0.13    0.00%      0.40     0.13    0.00%  _p9k_glob
+140)    1           0.62     0.62    0.00%      0.36     0.36    0.00%  _p9k_wrap_widgets
+141)    2           2.65     1.33    0.02%      0.35     0.17    0.00%  _zsh_autosuggest_bound_1_accept-line
+142)   23           0.35     0.02    0.00%      0.35     0.02    0.00%  _p9k_escape
+143)    1           0.34     0.34    0.00%      0.34     0.34    0.00%  _p9k_init_vars
+144)    2           0.32     0.16    0.00%      0.32     0.16    0.00%  p10k
+145)    1        7802.51  7802.51   58.62%      0.31     0.31    0.00%  .autocomplete.__init__.precmd
+146)    2           0.36     0.18    0.00%      0.30     0.15    0.00%  _p9k_cache_stat_get
+147)    4           2.11     0.53    0.02%      0.30     0.07    0.00%  _p9k_widget
+148)    2           0.27     0.14    0.00%      0.27     0.14    0.00%  -fast-highlight-fill-option-variables
+149)    8           0.62     0.08    0.00%      0.27     0.03    0.00%  _p9k_left_prompt_segment
+150)    2           0.53     0.26    0.00%      0.26     0.13    0.00%  gitstatus_query_p9k_
+151)    2           0.70     0.35    0.01%      0.23     0.11    0.00%  .autocomplete.async.clear
+152)    1           0.23     0.23    0.00%      0.23     0.23    0.00%  (anon) [/Users/duuta/.zsh/plugins/zsh-autocomplete/functions/widget/.autocomplete.history-search.completion-widget:111]
+153)    2           2.30     1.15    0.02%      0.22     0.11    0.00%  _zsh_autosuggest_widget_clear
+154)    2           0.86     0.43    0.01%      0.21     0.11    0.00%  _p9k_vcs_gitstatus
+155)    2           0.27     0.13    0.00%      0.20     0.10    0.00%  _gitstatus_process_response_p9k_
+156)    6           0.18     0.03    0.00%      0.18     0.03    0.00%  .autocomplete.widget.z
+157)    2           0.58     0.29    0.00%      0.17     0.09    0.00%  prompt_context
+158)    4           0.17     0.04    0.00%      0.17     0.04    0.00%  .autocomplete.async.reset-context
+159)    6           0.17     0.03    0.00%      0.17     0.03    0.00%  _p9k_cache_ephemeral_get
+160)    7           0.16     0.02    0.00%      0.16     0.02    0.00%  .autocomplete.widget.c
+161)    1           6.18     6.18    0.05%      0.16     0.16    0.00%  prompt_powerlevel9k_setup
+162)    1          44.58    44.58    0.33%      0.16     0.16    0.00%  _p9k_do_dump
+163)    1           2.78     2.78    0.02%      0.16     0.16    0.00%  _p9k_set_instant_prompt
+164)    1           5.96     5.96    0.04%      0.16     0.16    0.00%  prompt_powerlevel9k_teardown
+165)    2           0.15     0.08    0.00%      0.15     0.08    0.00%  .autocomplete.compinit
+166)    1        1614.84  1614.84   12.13%      0.15     0.15    0.00%  _zsh_autosuggest_bound_1_up-line-or-search
+167)    1           0.22     0.22    0.00%      0.15     0.15    0.00%  (anon) [:27]
+168)    6           0.15     0.03    0.00%      0.15     0.03    0.00%  _p9k_restore_special_params
+169)    2           0.58     0.29    0.00%      0.14     0.07    0.00%  prompt_prompt_char
+170)    2          59.04    29.52    0.44%      0.13     0.07    0.00%  _p9k_precmd
+171)    1           1.43     1.43    0.01%      0.13     0.13    0.00%  .autocomplete.async.precmd
+172)    1           0.12     0.12    0.00%      0.12     0.12    0.00%  _p9k_precmd_first
+173)    2           1.21     0.60    0.01%      0.12     0.06    0.00%  _zsh_highlight_widget_orig-s000-r519-accept-line
+174)    2           0.12     0.06    0.00%      0.12     0.06    0.00%  (anon) [/Users/duuta/.zsh/plugins/fast-syntax-highlighting/functions/fast-highlight:40]
+175)    1           0.28     0.28    0.00%      0.11     0.11    0.00%  .autocomplete.widget.precmd
+176)    2           2.40     1.20    0.02%      0.11     0.06    0.00%  _zsh_highlight_widget_zle-line-finish
+177)    1           0.17     0.17    0.00%      0.11     0.11    0.00%  _p9k_vcs_info_init
+178)    2           3.39     1.70    0.03%      0.11     0.05    0.00%  _zsh_autosuggest_bound_1_user:_zsh_highlight_widget_zle-line-finish
+179)    2           1.89     0.95    0.01%      0.10     0.05    0.00%  _zsh_autosuggest_clear
+180)    2           0.10     0.05    0.00%      0.10     0.05    0.00%  _p9k_on_widget_zle-line-finish
+181)    4           0.09     0.02    0.00%      0.09     0.02    0.00%  _p9k_color
+182)    2           1.44     0.72    0.01%      0.09     0.05    0.00%  _p9k_widget_zle-line-finish
+183)    1           0.09     0.09    0.00%      0.09     0.09    0.00%  _autocomplete.history_lines.suffix
+184)    2           0.09     0.05    0.00%      0.09     0.05    0.00%  _p9k_vcs_status_for_dir
+185)    2           0.17     0.08    0.00%      0.09     0.04    0.00%  _p9k_preexec1
+186)    2           0.09     0.04    0.00%      0.09     0.04    0.00%  .autocomplete.recent-dirs
+187)    2           0.08     0.04    0.00%      0.08     0.04    0.00%  zmathfunc
+188)    2           0.44     0.22    0.00%      0.08     0.04    0.00%  prompt_kubecontext
+189)    2           0.48     0.24    0.00%      0.08     0.04    0.00%  _p9k_upglob
+190)    1           0.07     0.07    0.00%      0.07     0.07    0.00%  _zsh_highlight_apply_zle_highlight
+191)    2           0.56     0.28    0.00%      0.07     0.04    0.00%  _p9k_pyenv_compute
+192)    2           0.07     0.04    0.00%      0.07     0.04    0.00%  _p9k_cache_ephemeral_set
+193)    2           0.07     0.04    0.00%      0.07     0.04    0.00%  _p9k_save_status
+194)    3           0.07     0.02    0.00%      0.07     0.02    0.00%  _p9k_segment_in_use
+195)    3           0.07     0.02    0.00%      0.07     0.02    0.00%  _p9k_get_icon
+196)    2           0.27     0.13    0.00%      0.07     0.03    0.00%  prompt_time
+197)    2           0.07     0.03    0.00%      0.07     0.03    0.00%  _gitstatus_clear_p9k_
+198)    2           0.27     0.14    0.00%      0.07     0.03    0.00%  prompt_virtualenv
+199)    1          33.23    33.23    0.25%      0.06     0.06    0.00%  _p9k_init_vcs
+200)    3           0.06     0.02    0.00%      0.06     0.02    0.00%  _p9k_param
+201)    2           6.03     3.01    0.05%      0.06     0.03    0.00%  _p9k_setup
+202)    1           0.06     0.06    0.00%      0.06     0.06    0.00%  _p9k_prompt_nix_shell_init
+203)    2           0.06     0.03    0.00%      0.06     0.03    0.00%  _p9k_preexec2
+204)    1          32.97    32.97    0.25%      0.06     0.06    0.00%  (anon) [:8673]
+205)    2           0.31     0.16    0.00%      0.06     0.03    0.00%  prompt_status
+206)    2           0.81     0.40    0.01%      0.05     0.03    0.00%  _p9k_widget_zle-line-init
+207)    3           0.05     0.02    0.00%      0.05     0.02    0.00%  _p9k_escape_style
+208)    2           0.05     0.03    0.00%      0.05     0.03    0.00%  _p9k_vcs_render
+209)    1           0.05     0.05    0.00%      0.05     0.05    0.00%  (anon) [/opt/homebrew/Cellar/zsh/5.9/share/zsh/functions/add-zle-hook-widget:28]
+210)    1           0.05     0.05    0.00%      0.05     0.05    0.00%  .autocomplete.history-search.completion-widget.post
+211)    3           0.05     0.02    0.00%      0.05     0.02    0.00%  _p9k_foreground
+212)    1           0.15     0.15    0.00%      0.05     0.05    0.00%  prompt_direnv
+213)    1           0.13     0.13    0.00%      0.04     0.04    0.00%  prompt_background_jobs
+214)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _zsh_highlight_preexec_hook
+215)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _p9k_gcloud_prefetch
+216)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  prompt_vcs
+217)    2           0.08     0.04    0.00%      0.04     0.02    0.00%  _p9k_async_segments_compute
+218)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _p9k_should_dump
+219)    2           0.60     0.30    0.00%      0.04     0.02    0.00%  prompt_pyenv
+220)    1          17.41    17.41    0.13%      0.03     0.03    0.00%  _zsh_autosuggest_start
+221)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  _p9k_on_widget_zle-line-init
+222)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  prompt_command_execution_time
+223)    1           0.14     0.14    0.00%      0.03     0.03    0.00%  instant_prompt_time
+224)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  _p9k_maybe_ignore_git_repo
+225)    1           0.03     0.03    0.00%      0.03     0.03    0.00%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:150]
+226)    2           0.03     0.01    0.00%      0.03     0.01    0.00%  _p9k_do_nothing
+227)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_direnv_init
+228)    1           0.29     0.29    0.00%      0.02     0.02    0.00%  instant_prompt_context
+229)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_asdf_init
+230)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  instant_prompt_status
+231)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_init_toolbox
+232)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_gcloud_init
+233)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_haskell_stack_init
+234)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_phpenv_init
+235)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_init_ssh
+236)    1           0.12     0.12    0.00%      0.02     0.02    0.00%  instant_prompt_toolbox
+237)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nodenv_init
+238)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_aws_eb_env_init
+239)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_scalaenv_init
+240)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_virtualenv_init
+241)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_anaconda_init
+242)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_taskwarrior_init
+243)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_vim_shell_init
+244)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_midnight_commander_init
+245)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_todo_init
+246)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nodeenv_init
+247)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_timewarrior_init
+248)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_ranger
+249)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_nnn
+250)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_pyenv_init
+251)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_goenv_init
+252)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_ranger_init
+253)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nnn_init
+254)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_lf_init
+255)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_xplr_init
+256)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_fvm_init
+257)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_jenv_init
+258)    1           0.26     0.26    0.00%      0.02     0.02    0.00%  instant_prompt_dir
+259)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_prompt_char
+260)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_plenv_init
+261)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_toolbox_init
+262)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_context_init
+263)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_kubecontext_init
+264)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_terraform_init
+265)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_aws_init
+266)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_azure_init
+267)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_google_app_cred_init
+268)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_rbenv_init
+269)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_rvm_init
+270)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_luaenv_init
+271)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_perlbrew_init
+272)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nvm_init
+273)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_nix_shell
+274)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nordvpn_init
+275)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_background
+276)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_xplr
+277)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_vim_shell
+278)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  instant_prompt_direnv
+279)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_lf
+280)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_midnight_commander
+281)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_time_init
+
+-----------------------------------------------------------------------------------
+
+145)    1        7802.51  7802.51   58.62%      0.31     0.31    0.00%  .autocomplete.__init__.precmd
+       1/1         0.22     0.22    0.00%      0.15     0.15             (anon) [:27] [167]
+       1/1         0.28     0.28    0.00%      0.11     0.11             .autocomplete.widget.precmd [175]
+       1/1         1.43     1.43    0.01%      0.13     0.13             .autocomplete.async.precmd [171]
+       1/1         2.14     2.14    0.02%      2.14     2.14             .autocomplete.config.precmd [101]
+       1/1        11.81    11.81    0.09%      0.46     0.46             .autocomplete.key-binding.precmd [138]
+       1/1        16.55    16.55    0.12%     12.79    12.79             .autocomplete.recent-dirs.precmd [39]
+       1/1      7769.78  7769.78   58.37%      6.20     6.20             .autocomplete.compinit.precmd [65]
+
+-----------------------------------------------------------------------------------
+
+       1/1      7769.78  7769.78   58.37%      6.20     6.20             .autocomplete.__init__.precmd [145]
+65)    1        7769.78  7769.78   58.37%      6.20     6.20    0.05%  .autocomplete.compinit.precmd
+       1/67        0.10     0.10    0.00%      0.10     0.10             is-at-least [34]
+       4/4        24.77     6.19    0.19%     24.77     6.19             .autocomplete.patch [23]
+       1/1      7738.70  7738.70   58.14%   5620.15  5620.15             compinit [1]
+
+-----------------------------------------------------------------------------------
+
+       1/1      7738.70  7738.70   58.14%   5620.15  5620.15             .autocomplete.compinit.precmd [65]
+ 1)    1        7738.70  7738.70   58.14%   5620.15  5620.15   42.22%  compinit
+       1/2        36.86    36.86    0.28%      0.85     0.85             compaudit [16]
+       1/1       152.82   152.82    1.15%    152.82   152.82             compdump [8]
+     806/806    1928.87     2.39   14.49%   1928.87     2.39             compdef [2]
+
+-----------------------------------------------------------------------------------
+
+       1/71     1614.68  1614.68   12.13%      0.17     0.17             _zsh_autosuggest_bound_1_up-line-or-search [166]
+      45/71      973.02    21.62    7.31%      6.76     0.15             _zsh_autosuggest_bound_1_self-insert [63]
+      23/71      523.57    22.76    3.93%      3.38     0.15             _zsh_autosuggest_bound_1_vi-backward-delete-char [91]
+       2/71        3.28     1.64    0.02%      0.19     0.10             _zsh_autosuggest_bound_1_user:_zsh_highlight_widget_zle-line-finish [178]
+43)   71        3114.56    43.87   23.40%     10.50     0.15    0.08%  _zsh_autosuggest_widget_modify
+      71/180       2.78     0.04    0.02%      2.78     0.04             _zsh_autosuggest_highlight_apply [68]
+      71/135       3.86     0.05    0.03%      3.86     0.05             _zsh_autosuggest_highlight_reset [56]
+      71/71     3097.42    43.63   23.27%     10.03     0.14             _zsh_autosuggest_modify [45]
+
+-----------------------------------------------------------------------------------
+
+      71/71     3097.42    43.63   23.27%     10.03     0.14             _zsh_autosuggest_widget_modify [43]
+45)   71        3097.42    43.63   23.27%     10.03     0.14    0.08%  _zsh_autosuggest_modify
+      62/62     1358.56    21.91   10.21%      4.06     0.07             _zsh_autosuggest_fetch [77]
+      71/73     1728.83    24.35   12.99%     18.24     0.26             _zsh_autosuggest_invoke_original_widget [33]
+
+-----------------------------------------------------------------------------------
+
+     806/806    1928.87     2.39   14.49%   1928.87     2.39             compinit [1]
+ 2)  806        1928.87     2.39   14.49%   1928.87     2.39   14.49%  compdef
+
+-----------------------------------------------------------------------------------
+
+      71/73     1728.83    24.35   12.99%     18.24     0.26             _zsh_autosuggest_modify [45]
+       2/73        1.79     0.90    0.01%      0.58     0.29             _zsh_autosuggest_clear [179]
+33)   73        1730.62    23.71   13.00%     18.82     0.26    0.14%  _zsh_autosuggest_invoke_original_widget
+       2/2         1.21     0.60    0.01%      0.12     0.06             _zsh_highlight_widget_orig-s000-r519-accept-line [173]
+       2/2         2.40     1.20    0.02%      0.11     0.06             _zsh_highlight_widget_zle-line-finish [176]
+      23/23       31.11     1.35    0.23%      1.34     0.06             _zsh_highlight_widget_orig-s000-r519-vi-backward-delete-char [111]
+      45/45       63.25     1.41    0.48%      2.84     0.06             _zsh_highlight_widget_orig-s000-r519-self-insert [90]
+       1/1      1613.83  1613.83   12.12%   1581.12  1581.12             .autocomplete.up-line-or-search.zle-widget [3]
+
+-----------------------------------------------------------------------------------
+
+166)    1        1614.84  1614.84   12.13%      0.15     0.15    0.00%  _zsh_autosuggest_bound_1_up-line-or-search
+       1/71     1614.68  1614.68   12.13%      0.17     0.17             _zsh_autosuggest_widget_modify [43]
+
+-----------------------------------------------------------------------------------
+
+       1/1      1613.83  1613.83   12.12%   1581.12  1581.12             _zsh_autosuggest_invoke_original_widget [33]
+ 3)    1        1613.83  1613.83   12.12%   1581.12  1581.12   11.88%  .autocomplete.up-line-or-search.zle-widget
+       2/73        4.80     2.40    0.04%      1.35     0.67             azhw:zle-line-pre-redraw [18]
+       1/2        27.90    27.90    0.21%      6.29     6.29             .autocomplete.history-search.completion-widget [62]
+
+-----------------------------------------------------------------------------------
+
+      62/62     1358.56    21.91   10.21%      4.06     0.07             _zsh_autosuggest_modify [45]
+77)   62        1358.56    21.91   10.21%      4.06     0.07    0.03%  _zsh_autosuggest_fetch
+      62/62     1354.50    21.85   10.18%   1343.52    21.67             _zsh_autosuggest_async_request [4]
+
+-----------------------------------------------------------------------------------
+
+      62/62     1354.50    21.85   10.18%   1343.52    21.67             _zsh_autosuggest_fetch [77]
+ 4)   62        1354.50    21.85   10.18%   1343.52    21.67   10.09%  _zsh_autosuggest_async_request
+      62/67       10.97     0.18    0.08%     10.97     0.18             is-at-least [34]
+
+-----------------------------------------------------------------------------------
+
+63)   45         979.40    21.76    7.36%      6.39     0.14    0.05%  _zsh_autosuggest_bound_1_self-insert
+      45/71      973.02    21.62    7.31%      6.76     0.15             _zsh_autosuggest_widget_modify [43]
+
+-----------------------------------------------------------------------------------
+
+ 7)   45         868.16    19.29    6.52%    205.57     4.57    1.54%  .autocomplete.async.complete.fd-widget
+      45/45      662.59    14.72    4.98%     62.45     1.39             .autocomplete.async.complete.fd-widget.inner [13]
+
+-----------------------------------------------------------------------------------
+
+       2/73        4.80     2.40    0.04%      1.35     0.67             .autocomplete.up-line-or-search.zle-widget [3]
+18)   73         802.26    10.99    6.03%     34.64     0.47    0.26%  azhw:zle-line-pre-redraw
+      73/73       64.99     0.89    0.49%      3.31     0.05             _p9k_widget_zle-line-pre-redraw [84]
+      73/75      702.62     9.62    5.28%     12.92     0.18             .autocomplete.async.complete [38]
+
+-----------------------------------------------------------------------------------
+
+      73/75      702.62     9.62    5.28%     12.92     0.18             azhw:zle-line-pre-redraw [18]
+       2/75       11.80     5.90    0.09%      0.14     0.07             azhw:zle-line-init [127]
+38)   75         714.42     9.53    5.37%     13.05     0.17    0.10%  .autocomplete.async.complete
+      66/68        5.06     0.08    0.04%      5.06     0.08             .autocomplete.async.stop [71]
+      75/121       9.33     0.12    0.07%      9.29     0.12             .autocomplete.zle-flags [42]
+      66/138      13.54     0.21    0.10%      7.69     0.12             _zsh_highlight [28]
+      65/65      673.43    10.36    5.06%    673.43    10.36             .autocomplete.async.start [5]
+
+-----------------------------------------------------------------------------------
+
+      65/65      673.43    10.36    5.06%    673.43    10.36             .autocomplete.async.complete [38]
+ 5)   65         673.43    10.36    5.06%    673.43    10.36    5.06%  .autocomplete.async.start
+
+-----------------------------------------------------------------------------------
+
+      45/45      662.59    14.72    4.98%     62.45     1.39             .autocomplete.async.complete.fd-widget [7]
+13)   45         662.59    14.72    4.98%     62.45     1.39    0.47%  .autocomplete.async.complete.fd-widget.inner
+      45/180       1.16     0.03    0.01%      1.16     0.03             _zsh_autosuggest_highlight_apply [68]
+      45/121       2.22     0.05    0.02%      2.22     0.05             .autocomplete.zle-flags [42]
+      45/45      596.76    13.26    4.48%      7.33     0.16             .autocomplete.async.list-choices.completion-widget [54]
+
+-----------------------------------------------------------------------------------
+
+      45/45      596.76    13.26    4.48%      7.33     0.16             .autocomplete.async.complete.fd-widget.inner [13]
+54)   45         596.76    13.26    4.48%      7.33     0.16    0.06%  .autocomplete.async.list-choices.completion-widget
+      45/45        2.03     0.05    0.02%      2.03     0.05             .autocomplete.async.sufficient-input [103]
+      33/33      587.39    17.80    4.41%      5.85     0.18             .autocomplete.async.list-choices.main-complete [66]
+
+-----------------------------------------------------------------------------------
+
+      33/34      572.75    17.36    4.30%      6.85     0.21             .autocomplete.async.list-choices.main-complete [66]
+       1/34       21.39    21.39    0.16%      0.73     0.73             .autocomplete.history-search.completion-widget [62]
+52)   34         594.14    17.47    4.46%      7.58     0.22    0.06%  autocomplete:_main_complete:new
+       1/1         0.23     0.23    0.00%      0.23     0.23             (anon) [/Users/duuta/.zsh/plugins/zsh-autocomplete/functions/widget/.autocomplete.history-search.completion-widget:111] [152]
+      33/33        1.13     0.03    0.01%      1.13     0.03             (anon) [:111] [119]
+      34/34      585.20    17.21    4.40%     26.60     0.78             autocomplete:_main_complete:old [22]
+
+-----------------------------------------------------------------------------------
+
+      33/33      587.39    17.80    4.41%      5.85     0.18             .autocomplete.async.list-choices.completion-widget [54]
+66)   33         587.39    17.80    4.41%      5.85     0.18    0.04%  .autocomplete.async.list-choices.main-complete
+      33/33        2.95     0.09    0.02%      1.77     0.05             .autocomplete.async.list-choices.max-lines [104]
+      33/33        5.84     0.18    0.04%      5.84     0.18             (anon) [:432] [67]
+      33/34      572.75    17.36    4.30%      6.85     0.21             autocomplete:_main_complete:new [52]
+
+-----------------------------------------------------------------------------------
+
+      34/34      585.20    17.21    4.40%     26.60     0.78             autocomplete:_main_complete:new [52]
+22)   34         585.20    17.21    4.40%     26.60     0.78    0.20%  autocomplete:_main_complete:old
+       1/1         0.05     0.05    0.00%      0.05     0.05             .autocomplete.history-search.completion-widget.post [210]
+      33/33        1.00     0.03    0.01%      1.00     0.03             autocomplete:config:completer [121]
+       8/8         1.45     0.18    0.01%      1.45     0.18             _ignored [110]
+       8/8         2.39     0.30    0.02%      2.39     0.30             _prefix [96]
+      34/279       4.35     0.13    0.03%      4.35     0.13             _setup [31]
+       2/10       13.82     6.91    0.10%      0.52     0.26             _approximate [95]
+       1/2        14.61    14.61    0.11%      1.33     1.33             _autocomplete.history_lines [41]
+      34/34       14.81     0.44    0.11%      7.04     0.21             autocomplete:_main_complete:new:post [57]
+       8/8        18.87     2.36    0.14%      0.96     0.12             _correct [122]
+      65/73      487.24     7.50    3.66%      2.79     0.04             _complete [88]
+
+-----------------------------------------------------------------------------------
+
+91)   23         526.40    22.89    3.95%      2.82     0.12    0.02%  _zsh_autosuggest_bound_1_vi-backward-delete-char
+      23/71      523.57    22.76    3.93%      3.38     0.15             _zsh_autosuggest_widget_modify [43]
+
+-----------------------------------------------------------------------------------
+
+      65/73      487.24     7.50    3.66%      2.79     0.04             autocomplete:_main_complete:old [22]
+       8/73       26.21     3.28    0.20%      0.26     0.03             autocomplete:_approximate:old [133]
+88)   73         513.45     7.03    3.86%      3.05     0.04    0.02%  _complete
+      45/46       37.49     0.83    0.28%      7.46     0.17             _autocomplete.recent_paths [51]
+      45/45      156.67     3.48    1.18%      8.16     0.18             _autocomplete.ancestor_dirs [49]
+      73/73      316.24     4.33    2.38%      5.09     0.07             autocomplete:_complete:old [74]
+
+-----------------------------------------------------------------------------------
+
+      73/73      316.24     4.33    2.38%      5.09     0.07             _complete [88]
+74)   73         316.24     4.33    2.38%      5.09     0.07    0.04%  autocomplete:_complete:old
+      73/73        2.20     0.03    0.02%      2.20     0.03             _first [99]
+      12/12       69.27     5.77    0.52%      1.32     0.11             _normal [112]
+      61/61      239.67     3.93    1.80%      3.83     0.06             _redirect [79]
+
+-----------------------------------------------------------------------------------
+
+      61/73      234.10     3.84    1.76%     13.01     0.21             _redirect [79]
+      12/73       66.90     5.57    0.50%      2.35     0.20             _normal [112]
+35)   73         301.00     4.12    2.26%     15.36     0.21    0.12%  _dispatch
+      12/12       64.55     5.38    0.48%      1.17     0.10             _default [118]
+      61/73      221.09     3.62    1.66%     15.11     0.25             _files [32]
+
+-----------------------------------------------------------------------------------
+
+      61/73      221.09     3.62    1.66%     15.11     0.25             _dispatch [35]
+      12/73       63.38     5.28    0.48%      3.88     0.32             _default [118]
+32)   73         284.47     3.90    2.14%     18.98     0.26    0.14%  _files
+      73/251       2.93     0.04    0.02%      2.93     0.04             _have_glob_qual [53]
+     389/423      19.86     0.05    0.15%     19.86     0.05             _tags [26]
+     292/292      41.34     0.14    0.31%     12.46     0.04             _next_label [40]
+     146/146     201.35     1.38    1.51%     88.76     0.61             _path_files [11]
+
+-----------------------------------------------------------------------------------
+
+     135/315     140.60     1.04    1.06%    132.58     0.98             _autocomplete.ancestor_dirs [49]
+     173/315     104.14     0.60    0.78%     88.35     0.51             _path_files [11]
+       7/315       9.14     1.31    0.07%      8.57     1.22             .autocomplete.recent_paths.add [81]
+ 6)  315         253.89     0.81    1.91%    229.50     0.73    1.72%  compadd
+     277/277      10.12     0.04    0.08%     10.12     0.04             zsh_math_func_max [44]
+     277/277      14.27     0.05    0.11%     14.27     0.05             .autocomplete.compadd [37]
+
+-----------------------------------------------------------------------------------
+
+      61/61      239.67     3.93    1.80%      3.83     0.06             autocomplete:_complete:old [74]
+79)   61         239.67     3.93    1.80%      3.83     0.06    0.03%  _redirect
+      61/73        1.74     0.03    0.01%      1.74     0.03             _set_command [92]
+      61/73      234.10     3.84    1.76%     13.01     0.21             _dispatch [35]
+
+-----------------------------------------------------------------------------------
+
+ 9)    1         210.57   210.57    1.58%    151.31   151.31    1.14%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:3]
+       1/1         0.03     0.03    0.00%      0.03     0.03             (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:150] [225]
+       2/4         0.72     0.36    0.01%      0.72     0.36             _p9k_prompt_length [125]
+       1/1        58.51    58.51    0.44%     55.57    55.57             _p9k_preinit [14]
+
+-----------------------------------------------------------------------------------
+
+     146/146     201.35     1.38    1.51%     88.76     0.61             _files [32]
+11)  146         201.35     1.38    1.51%     88.76     0.61    0.67%  _path_files
+      49/49        3.87     0.08    0.03%      3.87     0.08             _list_files [78]
+     178/251       4.57     0.03    0.03%      4.57     0.03             _have_glob_qual [53]
+     173/315     104.14     0.60    0.78%     88.35     0.51             compadd [6]
+
+-----------------------------------------------------------------------------------
+
+      45/45      156.67     3.48    1.18%      8.16     0.18             _complete [88]
+49)   45         156.67     3.48    1.18%      8.16     0.18    0.06%  _autocomplete.ancestor_dirs
+      45/245       7.91     0.18    0.06%      5.43     0.12             _description [19]
+     135/315     140.60     1.04    1.06%    132.58     0.98             compadd [6]
+
+-----------------------------------------------------------------------------------
+
+10)    2         155.34    77.67    1.17%    149.09    74.54    1.12%  (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init_ssh [235]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init_toolbox [231]
+       1/2         0.02     0.02    0.00%      0.02     0.02             _p9k_setup [201]
+       1/1         6.18     6.18    0.05%      0.16     0.16             prompt_powerlevel9k_setup [161]
+
+-----------------------------------------------------------------------------------
+
+       1/1       152.82   152.82    1.15%    152.82   152.82             compinit [1]
+ 8)    1         152.82   152.82    1.15%    152.82   152.82    1.15%  compdump
+
+-----------------------------------------------------------------------------------
+
+21)    2         142.04    71.02    1.07%     30.23    15.12    0.23%  .autocomplete.__init__
+       2/2         0.08     0.04    0.00%      0.08     0.04             zmathfunc [187]
+       2/2         0.09     0.04    0.00%      0.09     0.04             .autocomplete.recent-dirs [186]
+       2/2         0.15     0.08    0.00%      0.15     0.08             .autocomplete.compinit [165]
+       2/14        0.22     0.11    0.00%      0.22     0.11             add-zsh-hook [59]
+       2/2         5.41     2.71    0.04%      0.59     0.29             .autocomplete.config [131]
+       2/2        12.66     6.33    0.10%      0.81     0.41             .autocomplete.key-binding [126]
+       2/2        24.40    12.20    0.18%     24.22    12.11             .autocomplete.widget [24]
+       2/2        68.79    34.39    0.52%     68.79    34.39             .autocomplete.async [12]
+
+-----------------------------------------------------------------------------------
+
+      70/138      84.90     1.21    0.64%     12.07     0.17             _zsh_highlight_call_widget [64]
+      66/138      13.54     0.21    0.10%      7.69     0.12             .autocomplete.async.complete [38]
+       2/138       2.29     1.15    0.02%      0.32     0.16             _zsh_highlight_widget_zle-line-finish [176]
+28)  138         100.73     0.73    0.76%     20.08     0.15    0.15%  _zsh_highlight
+       1/1         0.07     0.07    0.00%      0.07     0.07             _zsh_highlight_apply_zle_highlight [190]
+      66/66        2.93     0.04    0.02%      2.93     0.04             -fast-highlight-init [89]
+      66/66        6.66     0.10    0.05%      6.66     0.10             -fast-highlight-string-process [60]
+     130/130       7.52     0.06    0.06%      5.45     0.04             _zsh_highlight_buffer_modified [72]
+      66/66       63.46     0.96    0.48%     52.74     0.80             -fast-highlight-process [15]
+
+-----------------------------------------------------------------------------------
+
+      45/70       60.42     1.34    0.45%      4.21     0.09             _zsh_highlight_widget_orig-s000-r519-self-insert [90]
+      23/70       29.77     1.29    0.22%      1.93     0.08             _zsh_highlight_widget_orig-s000-r519-vi-backward-delete-char [111]
+       2/70        1.09     0.54    0.01%      0.14     0.07             _zsh_highlight_widget_orig-s000-r519-accept-line [173]
+64)   70          91.27     1.30    0.69%      6.28     0.09    0.05%  _zsh_highlight_call_widget
+       1/1         0.09     0.09    0.00%      0.09     0.09             _autocomplete.history_lines.suffix [183]
+      70/138      84.90     1.21    0.64%     12.07     0.17             _zsh_highlight [28]
+
+-----------------------------------------------------------------------------------
+
+      12/12       69.27     5.77    0.52%      1.32     0.11             autocomplete:_complete:old [74]
+112)   12          69.27     5.77    0.52%      1.32     0.11    0.01%  _normal
+      12/73        1.06     0.09    0.01%      1.06     0.09             _set_command [92]
+      12/73       66.90     5.57    0.50%      2.35     0.20             _dispatch [35]
+
+-----------------------------------------------------------------------------------
+
+       2/2        68.79    34.39    0.52%     68.79    34.39             .autocomplete.__init__ [21]
+12)    2          68.79    34.39    0.52%     68.79    34.39    0.52%  .autocomplete.async
+
+-----------------------------------------------------------------------------------
+
+      73/73       64.99     0.89    0.49%      3.31     0.05             azhw:zle-line-pre-redraw [18]
+84)   73          64.99     0.89    0.49%      3.31     0.05    0.02%  _p9k_widget_zle-line-pre-redraw
+      73/73       61.68     0.84    0.46%      7.00     0.10             _p9k_widget_zle-line-pre-redraw-impl [58]
+
+-----------------------------------------------------------------------------------
+
+      12/12       64.55     5.38    0.48%      1.17     0.10             _dispatch [35]
+118)   12          64.55     5.38    0.48%      1.17     0.10    0.01%  _default
+      12/73       63.38     5.28    0.48%      3.88     0.32             _files [32]
+
+-----------------------------------------------------------------------------------
+
+      66/66       63.46     0.96    0.48%     52.74     0.80             _zsh_highlight [28]
+15)   66          63.46     0.96    0.48%     52.74     0.80    0.40%  -fast-highlight-process
+      57/57        5.02     0.09    0.04%      5.02     0.09             -fast-highlight-check-path [75]
+      66/66        5.70     0.09    0.04%      5.70     0.09             -fast-highlight-main-type [69]
+
+-----------------------------------------------------------------------------------
+
+      45/45       63.25     1.41    0.48%      2.84     0.06             _zsh_autosuggest_invoke_original_widget [33]
+90)   45          63.25     1.41    0.48%      2.84     0.06    0.02%  _zsh_highlight_widget_orig-s000-r519-self-insert
+      45/70       60.42     1.34    0.45%      4.21     0.09             _zsh_highlight_call_widget [64]
+
+-----------------------------------------------------------------------------------
+
+      73/73       61.68     0.84    0.46%      7.00     0.10             _p9k_widget_zle-line-pre-redraw [84]
+58)   73          61.68     0.84    0.46%      7.00     0.10    0.05%  _p9k_widget_zle-line-pre-redraw-impl
+      65/69       54.68     0.84    0.41%     20.79     0.32             _p9k_widget_hook [25]
+
+-----------------------------------------------------------------------------------
+
+170)    2          59.04    29.52    0.44%      0.13     0.07    0.00%  _p9k_precmd
+       2/6         0.05     0.02    0.00%      0.05     0.02             _p9k_restore_special_params [168]
+       2/2        58.86    29.43    0.44%      1.21     0.61             _p9k_precmd_impl [116]
+
+-----------------------------------------------------------------------------------
+
+       2/2        58.86    29.43    0.44%      1.21     0.61             _p9k_precmd [170]
+116)    2          58.86    29.43    0.44%      1.21     0.61    0.01%  _p9k_precmd_impl
+       2/2         0.05     0.03    0.00%      0.05     0.03             _p9k_vcs_render [208]
+       2/2         0.07     0.04    0.00%      0.07     0.04             _p9k_save_status [193]
+       2/2         0.08     0.04    0.00%      0.04     0.02             _p9k_async_segments_compute [217]
+       2/10        0.30     0.15    0.00%      0.30     0.15             _p9k_worker_receive [76]
+       2/2         0.48     0.24    0.00%      0.48     0.24             _p9k_fetch_cwd [135]
+       2/2         0.86     0.43    0.01%      0.21     0.11             _p9k_vcs_gitstatus [154]
+       2/3         7.39     3.70    0.06%      2.33     1.17             _p9k_set_prompt [85]
+       2/2         8.83     4.41    0.07%      8.83     4.41             _p9k_must_init [46]
+       1/1        39.59    39.59    0.30%      0.90     0.90             _p9k_init [123]
+
+-----------------------------------------------------------------------------------
+
+       1/1        58.51    58.51    0.44%     55.57    55.57             (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:3] [9]
+14)    1          58.51    58.51    0.44%     55.57    55.57    0.42%  _p9k_preinit
+       1/2         2.94     2.94    0.02%      0.35     0.35             gitstatus_start_p9k_ [136]
+
+-----------------------------------------------------------------------------------
+
+      65/69       54.68     0.84    0.41%     20.79     0.32             _p9k_widget_zle-line-pre-redraw-impl [58]
+       4/69        1.81     0.45    0.01%      1.00     0.25             _p9k_widget [147]
+25)   69          56.48     0.82    0.42%     21.79     0.32    0.16%  _p9k_widget_hook
+       2/2         0.03     0.02    0.00%      0.03     0.02             _p9k_on_widget_zle-line-init [221]
+       2/2         0.10     0.05    0.00%      0.10     0.05             _p9k_on_widget_zle-line-finish [180]
+      69/69        2.20     0.03    0.02%      2.20     0.03             _p9k_check_visual_mode [100]
+      69/69        2.38     0.03    0.02%      2.38     0.03             _p9k_deschedule_redraw [97]
+     345/355       8.57     0.02    0.06%      8.57     0.02             _p9k_display_segment [47]
+      64/64       21.41     0.33    0.16%     21.41     0.33             _p9k_parse_buffer [27]
+
+-----------------------------------------------------------------------------------
+
+     146/245      28.88     0.20    0.22%     19.81     0.14             _next_label [40]
+      45/245       8.29     0.18    0.06%      5.69     0.13             _autocomplete.recent_paths [51]
+      45/245       7.91     0.18    0.06%      5.43     0.12             _autocomplete.ancestor_dirs [49]
+       1/245       2.41     2.41    0.02%      2.22     2.22             _autocomplete.history_lines [41]
+       8/245       1.23     0.15    0.01%      0.83     0.10             autocomplete:_approximate:old [133]
+19)  245          48.72     0.20    0.37%     33.98     0.14    0.26%  _description
+     245/279      14.74     0.06    0.11%     14.74     0.06             _setup [31]
+
+-----------------------------------------------------------------------------------
+
+162)    1          44.58    44.58    0.33%      0.16     0.16    0.00%  _p9k_do_dump
+       1/1         2.78     2.78    0.02%      0.16     0.16             _p9k_set_instant_prompt [163]
+       1/1         6.65     6.65    0.05%      6.65     6.65             _p9k_dump_instant_prompt [61]
+       1/1        34.99    34.99    0.26%     34.99    34.99             _p9k_dump_state [17]
+
+-----------------------------------------------------------------------------------
+
+     292/292      41.34     0.14    0.31%     12.46     0.04             _files [32]
+40)  292          41.34     0.14    0.31%     12.46     0.04    0.09%  _next_label
+     146/245      28.88     0.20    0.22%     19.81     0.14             _description [19]
+
+-----------------------------------------------------------------------------------
+
+       1/1        39.59    39.59    0.30%      0.90     0.90             _p9k_precmd_impl [116]
+123)    1          39.59    39.59    0.30%      0.90     0.90    0.01%  _p9k_init
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_time_init [281]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_nordvpn_init [274]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_luaenv_init [270]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_nvm_init [272]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_perlbrew_init [271]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_timewarrior_init [247]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_midnight_commander_init [244]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_vim_shell_init [243]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_xplr_init [255]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_lf_init [254]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_nnn_init [253]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_ranger_init [252]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_context_init [262]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_toolbox_init [261]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_google_app_cred_init [267]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_azure_init [266]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_pyenv_init [250]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_goenv_init [251]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_nodeenv_init [246]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_rbenv_init [268]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_rvm_init [269]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_fvm_init [256]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_jenv_init [257]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_plenv_init [260]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_kubecontext_init [263]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_terraform_init [264]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_aws_init [265]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_todo_init [245]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_scalaenv_init [239]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_nodenv_init [237]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_taskwarrior_init [242]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_virtualenv_init [240]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_aws_eb_env_init [238]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_anaconda_init [241]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_phpenv_init [234]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_gcloud_init [232]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_haskell_stack_init [233]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_asdf_init [229]
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_prompt_direnv_init [227]
+       2/3         0.05     0.02    0.00%      0.05     0.02             _p9k_segment_in_use [194]
+       1/1         0.06     0.06    0.00%      0.06     0.06             _p9k_prompt_nix_shell_init [202]
+       1/1         0.34     0.34    0.00%      0.34     0.34             _p9k_init_vars [143]
+       1/1         0.88     0.88    0.01%      0.75     0.75             _p9k_worker_start [128]
+       1/1         3.36     3.36    0.03%      0.59     0.59             _p9k_restore_state [130]
+       1/1        33.23    33.23    0.25%      0.06     0.06             _p9k_init_vcs [199]
+
+-----------------------------------------------------------------------------------
+
+      45/46       37.49     0.83    0.28%      7.46     0.17             _complete [88]
+       1/46        0.59     0.59    0.00%      0.13     0.13             _autocomplete.recent_paths [51]
+51)   46          37.49     0.82    0.28%      7.59     0.17    0.06%  _autocomplete.recent_paths
+       1/46        0.59     0.59    0.00%      0.13     0.13             _autocomplete.recent_paths [51]
+      45/45        7.30     0.16    0.05%      7.30     0.16             +autocomplete:recent-directories [55]
+      45/245       8.29     0.18    0.06%      5.69     0.13             _description [19]
+      45/45       14.31     0.32    0.11%      3.51     0.08             .autocomplete.recent_paths.add [81]
+
+-----------------------------------------------------------------------------------
+
+       1/2        36.86    36.86    0.28%      0.85     0.85             compinit [1]
+       1/2        36.01    36.01    0.27%     36.01    36.01             compaudit [16]
+16)    2          36.86    18.43    0.28%     36.86    18.43    0.28%  compaudit
+       1/2        36.01    36.01    0.27%     36.01    36.01             compaudit [16]
+
+-----------------------------------------------------------------------------------
+
+       1/2        32.91    32.91    0.25%      0.12     0.12             (anon) [:8673] [204]
+       1/2         2.94     2.94    0.02%      0.35     0.35             _p9k_preinit [14]
+136)    2          35.84    17.92    0.27%      0.47     0.23    0.00%  gitstatus_start_p9k_
+       1/1         2.59     2.59    0.02%      2.59     2.59             (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:597] [94]
+       1/1        32.78    32.78    0.25%     32.69    32.69             (anon) [:597] [20]
+
+-----------------------------------------------------------------------------------
+
+       1/1        34.99    34.99    0.26%     34.99    34.99             _p9k_do_dump [162]
+17)    1          34.99    34.99    0.26%     34.99    34.99    0.26%  _p9k_dump_state
+
+-----------------------------------------------------------------------------------
+
+       1/1        33.23    33.23    0.25%      0.06     0.06             _p9k_init [123]
+199)    1          33.23    33.23    0.25%      0.06     0.06    0.00%  _p9k_init_vcs
+       1/3         0.02     0.02    0.00%      0.02     0.02             _p9k_segment_in_use [194]
+       1/1         0.17     0.17    0.00%      0.11     0.11             _p9k_vcs_info_init [177]
+       1/1        32.97    32.97    0.25%      0.06     0.06             (anon) [:8673] [204]
+
+-----------------------------------------------------------------------------------
+
+       1/1        32.97    32.97    0.25%      0.06     0.06             _p9k_init_vcs [199]
+204)    1          32.97    32.97    0.25%      0.06     0.06    0.00%  (anon) [:8673]
+       1/2        32.91    32.91    0.25%      0.12     0.12             gitstatus_start_p9k_ [136]
+
+-----------------------------------------------------------------------------------
+
+       1/1        32.78    32.78    0.25%     32.69    32.69             gitstatus_start_p9k_ [136]
+20)    1          32.78    32.78    0.25%     32.69    32.69    0.25%  (anon) [:597]
+       1/14        0.09     0.09    0.00%      0.09     0.09             add-zsh-hook [59]
+
+-----------------------------------------------------------------------------------
+
+       8/10       17.91     2.24    0.13%      2.04     0.26             _correct [122]
+       2/10       13.82     6.91    0.10%      0.52     0.26             autocomplete:_main_complete:old [22]
+95)   10          31.73     3.17    0.24%      2.56     0.26    0.02%  _approximate
+      10/10        0.89     0.09    0.01%      0.89     0.09             _autocomplete.is_glob [124]
+      10/10       28.28     2.83    0.21%      0.52     0.05             autocomplete:_approximate:old [133]
+
+-----------------------------------------------------------------------------------
+
+      23/23       31.11     1.35    0.23%      1.34     0.06             _zsh_autosuggest_invoke_original_widget [33]
+111)   23          31.11     1.35    0.23%      1.34     0.06    0.01%  _zsh_highlight_widget_orig-s000-r519-vi-backward-delete-char
+      23/70       29.77     1.29    0.22%      1.93     0.08             _zsh_highlight_call_widget [64]
+
+-----------------------------------------------------------------------------------
+
+      10/10       28.28     2.83    0.21%      0.52     0.05             _approximate [95]
+133)   10          28.28     2.83    0.21%      0.52     0.05    0.00%  autocomplete:_approximate:old
+       2/17        0.05     0.02    0.00%      0.05     0.02             _requested [87]
+       4/423       0.26     0.07    0.00%      0.26     0.07             _tags [26]
+       8/245       1.23     0.15    0.01%      0.83     0.10             _description [19]
+       8/73       26.21     3.28    0.20%      0.26     0.03             _complete [88]
+
+-----------------------------------------------------------------------------------
+
+       1/2        27.90    27.90    0.21%      6.29     6.29             .autocomplete.up-line-or-search.zle-widget [3]
+       1/2        21.61    21.61    0.16%      0.22     0.22             .autocomplete.history-search.completion-widget [62]
+62)    2          27.90    13.95    0.21%      6.51     3.26    0.05%  .autocomplete.history-search.completion-widget
+       1/34       21.39    21.39    0.16%      0.73     0.73             autocomplete:_main_complete:new [52]
+       1/2        21.61    21.61    0.16%      0.22     0.22             .autocomplete.history-search.completion-widget [62]
+
+-----------------------------------------------------------------------------------
+
+36)   62          27.50     0.44    0.21%     14.66     0.24    0.11%  _zsh_autosuggest_async_response
+      62/62       12.84     0.21    0.10%      5.66     0.09             _zsh_autosuggest_widget_suggest [70]
+
+-----------------------------------------------------------------------------------
+
+       4/4        24.77     6.19    0.19%     24.77     6.19             .autocomplete.compinit.precmd [65]
+23)    4          24.77     6.19    0.19%     24.77     6.19    0.19%  .autocomplete.patch
+
+-----------------------------------------------------------------------------------
+
+       2/2        24.40    12.20    0.18%     24.22    12.11             .autocomplete.__init__ [21]
+24)    2          24.40    12.20    0.18%     24.22    12.11    0.18%  .autocomplete.widget
+       6/6         0.18     0.03    0.00%      0.18     0.03             .autocomplete.widget.z [156]
+
+-----------------------------------------------------------------------------------
+
+     389/423      19.86     0.05    0.15%     19.86     0.05             _files [32]
+      30/423       1.31     0.04    0.01%      1.31     0.04             _autocomplete.unambiguous [83]
+       4/423       0.26     0.07    0.00%      0.26     0.07             autocomplete:_approximate:old [133]
+26)  423          21.44     0.05    0.16%     21.44     0.05    0.16%  _tags
+
+-----------------------------------------------------------------------------------
+
+      64/64       21.41     0.33    0.16%     21.41     0.33             _p9k_widget_hook [25]
+27)   64          21.41     0.33    0.16%     21.41     0.33    0.16%  _p9k_parse_buffer
+
+-----------------------------------------------------------------------------------
+
+       8/20       10.83     1.35    0.08%      0.63     0.08             .autocomplete.key-binding [126]
+      12/20        9.90     0.83    0.07%      0.84     0.07             .autocomplete.key-binding.precmd [138]
+108)   20          20.73     1.04    0.16%      1.47     0.07    0.01%  .autocomplete.key-binding.rebind
+      20/21       19.26     0.96    0.14%     19.26     0.96             .autocomplete.key-binding.bound [29]
+
+-----------------------------------------------------------------------------------
+
+      20/21       19.26     0.96    0.14%     19.26     0.96             .autocomplete.key-binding.rebind [108]
+       1/21        0.75     0.75    0.01%      0.75     0.75             .autocomplete.key-binding.precmd [138]
+29)   21          20.01     0.95    0.15%     20.01     0.95    0.15%  .autocomplete.key-binding.bound
+
+-----------------------------------------------------------------------------------
+
+30)  128          19.99     0.16    0.15%     19.99     0.16    0.15%  alias_if_exists
+
+-----------------------------------------------------------------------------------
+
+     245/279      14.74     0.06    0.11%     14.74     0.06             _description [19]
+      34/279       4.35     0.13    0.03%      4.35     0.13             autocomplete:_main_complete:old [22]
+31)  279          19.10     0.07    0.14%     19.10     0.07    0.14%  _setup
+
+-----------------------------------------------------------------------------------
+
+       8/8        18.87     2.36    0.14%      0.96     0.12             autocomplete:_main_complete:old [22]
+122)    8          18.87     2.36    0.14%      0.96     0.12    0.01%  _correct
+       8/10       17.91     2.24    0.13%      2.04     0.26             _approximate [95]
+
+-----------------------------------------------------------------------------------
+
+220)    1          17.41    17.41    0.13%      0.03     0.03    0.00%  _zsh_autosuggest_start
+       1/14        0.06     0.06    0.00%      0.06     0.06             add-zsh-hook [59]
+       1/1        17.32    17.32    0.13%      5.22     5.22             _zsh_autosuggest_bind_widgets [73]
+
+-----------------------------------------------------------------------------------
+
+       1/1        17.32    17.32    0.13%      5.22     5.22             _zsh_autosuggest_start [220]
+73)    1          17.32    17.32    0.13%      5.22     5.22    0.04%  _zsh_autosuggest_bind_widgets
+     191/191      12.10     0.06    0.09%      8.60     0.05             _zsh_autosuggest_bind_widget [48]
+
+-----------------------------------------------------------------------------------
+
+       1/1        16.55    16.55    0.12%     12.79    12.79             .autocomplete.__init__.precmd [145]
+39)    1          16.55    16.55    0.12%     12.79    12.79    0.10%  .autocomplete.recent-dirs.precmd
+       1/14        0.08     0.08    0.00%      0.08     0.08             add-zsh-hook [59]
+       1/1         3.68     3.68    0.03%      3.68     3.68             chpwd_recent_filehandler [80]
+
+-----------------------------------------------------------------------------------
+
+      62/67       10.97     0.18    0.08%     10.97     0.18             _zsh_autosuggest_async_request [4]
+       2/67        4.82     2.41    0.04%      4.82     2.41             .autocomplete.config [131]
+       1/67        0.10     0.10    0.00%      0.10     0.10             .autocomplete.compinit.precmd [65]
+34)   67          16.11     0.24    0.12%     16.11     0.24    0.12%  is-at-least
+
+-----------------------------------------------------------------------------------
+
+      34/34       14.81     0.44    0.11%      7.04     0.21             autocomplete:_main_complete:old [22]
+57)   34          14.81     0.44    0.11%      7.04     0.21    0.05%  autocomplete:_main_complete:new:post
+      34/34        7.77     0.23    0.06%      3.31     0.10             _autocomplete.unambiguous [83]
+
+-----------------------------------------------------------------------------------
+
+       1/2        14.61    14.61    0.11%      1.33     1.33             autocomplete:_main_complete:old [22]
+       1/2        13.28    13.28    0.10%     10.88    10.88             _autocomplete.history_lines [41]
+41)    2          14.61     7.31    0.11%     12.21     6.10    0.09%  _autocomplete.history_lines
+       1/245       2.41     2.41    0.02%      2.22     2.22             _description [19]
+       1/2        13.28    13.28    0.10%     10.88    10.88             _autocomplete.history_lines [41]
+
+-----------------------------------------------------------------------------------
+
+      45/45       14.31     0.32    0.11%      3.51     0.08             _autocomplete.recent_paths [51]
+81)   45          14.31     0.32    0.11%      3.51     0.08    0.03%  .autocomplete.recent_paths.add
+      45/45        1.65     0.04    0.01%      1.65     0.04             .autocomplete.recent_paths.trim [106]
+       7/315       9.14     1.31    0.07%      8.57     1.22             compadd [6]
+
+-----------------------------------------------------------------------------------
+
+     277/277      14.27     0.05    0.11%     14.27     0.05             compadd [6]
+37)  277          14.27     0.05    0.11%     14.27     0.05    0.11%  .autocomplete.compadd
+
+-----------------------------------------------------------------------------------
+
+127)    2          13.46     6.73    0.10%      0.76     0.38    0.01%  azhw:zle-line-init
+       2/4         0.08     0.04    0.00%      0.08     0.04             .autocomplete.async.reset-context [158]
+       2/2         0.81     0.40    0.01%      0.05     0.03             _p9k_widget_zle-line-init [206]
+       2/75       11.80     5.90    0.09%      0.14     0.07             .autocomplete.async.complete [38]
+
+-----------------------------------------------------------------------------------
+
+      62/62       12.84     0.21    0.10%      5.66     0.09             _zsh_autosuggest_async_response [36]
+70)   62          12.84     0.21    0.10%      5.66     0.09    0.04%  _zsh_autosuggest_widget_suggest
+      62/180       1.72     0.03    0.01%      1.72     0.03             _zsh_autosuggest_highlight_apply [68]
+      62/62        2.37     0.04    0.02%      2.37     0.04             _zsh_autosuggest_suggest [98]
+      62/135       3.09     0.05    0.02%      3.09     0.05             _zsh_autosuggest_highlight_reset [56]
+
+-----------------------------------------------------------------------------------
+
+       2/2        12.66     6.33    0.10%      0.81     0.41             .autocomplete.__init__ [21]
+126)    2          12.66     6.33    0.10%      0.81     0.41    0.01%  .autocomplete.key-binding
+       4/34        0.17     0.04    0.00%      0.17     0.04             .autocomplete.key-binding.bind [113]
+       8/14        0.84     0.11    0.01%      0.29     0.04             .autocomplete.key-binding.bind-menu [137]
+       8/20       10.83     1.35    0.08%      0.63     0.08             .autocomplete.key-binding.rebind [108]
+
+-----------------------------------------------------------------------------------
+
+     191/191      12.10     0.06    0.09%      8.60     0.05             _zsh_autosuggest_bind_widgets [73]
+48)  191          12.10     0.06    0.09%      8.60     0.05    0.06%  _zsh_autosuggest_bind_widget
+     191/191       3.50     0.02    0.03%      3.50     0.02             _zsh_autosuggest_incr_bind_count [82]
+
+-----------------------------------------------------------------------------------
+
+       1/1        11.81    11.81    0.09%      0.46     0.46             .autocomplete.__init__.precmd [145]
+138)    1          11.81    11.81    0.09%      0.46     0.46    0.00%  .autocomplete.key-binding.precmd
+       2/34        0.09     0.04    0.00%      0.09     0.04             .autocomplete.key-binding.bind [113]
+       6/14        0.62     0.10    0.00%      0.17     0.03             .autocomplete.key-binding.bind-menu [137]
+       1/21        0.75     0.75    0.01%      0.75     0.75             .autocomplete.key-binding.bound [29]
+      12/20        9.90     0.83    0.07%      0.84     0.07             .autocomplete.key-binding.rebind [108]
+
+-----------------------------------------------------------------------------------
+
+      75/121       9.33     0.12    0.07%      9.29     0.12             .autocomplete.async.complete [38]
+      45/121       2.22     0.05    0.02%      2.22     0.05             .autocomplete.async.complete.fd-widget.inner [13]
+       1/121       0.04     0.04    0.00%      0.04     0.04             .autocomplete.zle-flags [42]
+42)  121          11.55     0.10    0.09%     11.55     0.10    0.09%  .autocomplete.zle-flags
+       1/121       0.04     0.04    0.00%      0.04     0.04             .autocomplete.zle-flags [42]
+
+-----------------------------------------------------------------------------------
+
+     277/277      10.12     0.04    0.08%     10.12     0.04             compadd [6]
+44)  277          10.12     0.04    0.08%     10.12     0.04    0.08%  zsh_math_func_max
+
+-----------------------------------------------------------------------------------
+
+       2/3         7.39     3.70    0.06%      2.33     1.17             _p9k_precmd_impl [116]
+       1/3         2.62     2.62    0.02%      0.97     0.97             _p9k_set_instant_prompt [163]
+85)    3          10.01     3.34    0.08%      3.30     1.10    0.02%  _p9k_set_prompt
+       1/1         0.02     0.02    0.00%      0.02     0.02             instant_prompt_direnv [278]
+       1/1         0.02     0.02    0.00%      0.02     0.02             instant_prompt_status [230]
+       2/2         0.03     0.02    0.00%      0.03     0.02             prompt_command_execution_time [222]
+       2/2         0.04     0.02    0.00%      0.04     0.02             prompt_vcs [216]
+       1/1         0.09     0.09    0.00%      0.02     0.02             instant_prompt_lf [279]
+       1/1         0.09     0.09    0.00%      0.02     0.02             instant_prompt_nix_shell [273]
+       1/1         0.09     0.09    0.00%      0.02     0.02             instant_prompt_nnn [249]
+       1/1         0.09     0.09    0.00%      0.02     0.02             instant_prompt_ranger [248]
+       1/1         0.11     0.11    0.00%      0.02     0.02             instant_prompt_midnight_commander [280]
+       1/1         0.11     0.11    0.00%      0.02     0.02             instant_prompt_xplr [276]
+       1/1         0.11     0.11    0.00%      0.02     0.02             instant_prompt_prompt_char [259]
+       1/1         0.11     0.11    0.00%      0.02     0.02             instant_prompt_vim_shell [277]
+       1/1         0.12     0.12    0.00%      0.02     0.02             instant_prompt_toolbox [236]
+       1/1         0.13     0.13    0.00%      0.04     0.04             prompt_background_jobs [213]
+       1/1         0.14     0.14    0.00%      0.03     0.03             instant_prompt_time [223]
+       1/1         0.15     0.15    0.00%      0.05     0.05             prompt_direnv [212]
+       1/1         0.26     0.26    0.00%      0.02     0.02             instant_prompt_dir [258]
+       2/2         0.27     0.13    0.00%      0.07     0.03             prompt_time [196]
+       2/2         0.27     0.14    0.00%      0.07     0.03             prompt_virtualenv [198]
+       1/1         0.29     0.29    0.00%      0.02     0.02             instant_prompt_context [228]
+       2/2         0.31     0.16    0.00%      0.06     0.03             prompt_status [205]
+       1/2         0.31     0.31    0.00%      0.10     0.10             prompt_context [157]
+       2/2         0.44     0.22    0.00%      0.08     0.04             prompt_kubecontext [188]
+       2/2         0.58     0.29    0.00%      0.14     0.07             prompt_prompt_char [169]
+       2/2         0.60     0.30    0.00%      0.04     0.02             prompt_pyenv [219]
+       2/3         1.93     0.96    0.01%      1.12     0.56             prompt_dir [115]
+
+-----------------------------------------------------------------------------------
+
+       2/2         8.83     4.41    0.07%      8.83     4.41             _p9k_precmd_impl [116]
+46)    2           8.83     4.41    0.07%      8.83     4.41    0.07%  _p9k_must_init
+
+-----------------------------------------------------------------------------------
+
+     345/355       8.57     0.02    0.06%      8.57     0.02             _p9k_widget_hook [25]
+      10/355       0.21     0.02    0.00%      0.21     0.02             _p9k_on_expand [105]
+47)  355           8.78     0.02    0.07%      8.78     0.02    0.07%  _p9k_display_segment
+
+-----------------------------------------------------------------------------------
+
+50)    2           8.06     4.03    0.06%      8.06     4.03    0.06%  _zsh_highlight_bind_widgets
+
+-----------------------------------------------------------------------------------
+
+      34/34        7.77     0.23    0.06%      3.31     0.10             autocomplete:_main_complete:new:post [57]
+83)   34           7.77     0.23    0.06%      3.31     0.10    0.02%  _autocomplete.unambiguous
+      30/423       1.31     0.04    0.01%      1.31     0.04             _tags [26]
+      15/17        3.14     0.21    0.02%      3.14     0.21             _requested [87]
+
+-----------------------------------------------------------------------------------
+
+     130/130       7.52     0.06    0.06%      5.45     0.04             _zsh_highlight [28]
+72)  130           7.52     0.06    0.06%      5.45     0.04    0.04%  _zsh_highlight_buffer_modified
+      66/66        2.08     0.03    0.02%      2.08     0.03             _zsh_highlight_cursor_moved [102]
+
+-----------------------------------------------------------------------------------
+
+     178/251       4.57     0.03    0.03%      4.57     0.03             _path_files [11]
+      73/251       2.93     0.04    0.02%      2.93     0.04             _files [32]
+53)  251           7.50     0.03    0.06%      7.50     0.03    0.06%  _have_glob_qual
+
+-----------------------------------------------------------------------------------
+
+      45/45        7.30     0.16    0.05%      7.30     0.16             _autocomplete.recent_paths [51]
+55)   45           7.30     0.16    0.05%      7.30     0.16    0.05%  +autocomplete:recent-directories
+
+-----------------------------------------------------------------------------------
+
+      71/135       3.86     0.05    0.03%      3.86     0.05             _zsh_autosuggest_widget_modify [43]
+      62/135       3.09     0.05    0.02%      3.09     0.05             _zsh_autosuggest_widget_suggest [70]
+       2/135       0.11     0.06    0.00%      0.11     0.06             _zsh_autosuggest_widget_clear [153]
+56)  135           7.06     0.05    0.05%      7.06     0.05    0.05%  _zsh_autosuggest_highlight_reset
+
+-----------------------------------------------------------------------------------
+
+       2/14        5.80     2.90    0.04%      5.80     2.90             prompt_powerlevel9k_teardown [164]
+       2/14        0.22     0.11    0.00%      0.22     0.11             .autocomplete.__init__ [21]
+       1/14        0.14     0.14    0.00%      0.14     0.14             _p9k_worker_start [128]
+       1/14        0.09     0.09    0.00%      0.09     0.09             (anon) [:597] [20]
+       1/14        0.08     0.08    0.00%      0.08     0.08             .autocomplete.recent-dirs.precmd [39]
+       1/14        0.06     0.06    0.00%      0.06     0.06             (anon) [:27] [167]
+       1/14        0.06     0.06    0.00%      0.06     0.06             .autocomplete.async.precmd [171]
+       1/14        0.06     0.06    0.00%      0.06     0.06             _zsh_autosuggest_start [220]
+59)   14           6.88     0.49    0.05%      6.88     0.49    0.05%  add-zsh-hook
+
+-----------------------------------------------------------------------------------
+
+114)    2           6.77     3.39    0.05%      1.24     0.62    0.01%  azhw:zle-line-finish
+       2/2         0.70     0.35    0.01%      0.23     0.11             .autocomplete.async.clear [151]
+       2/2         1.44     0.72    0.01%      0.09     0.05             _p9k_widget_zle-line-finish [182]
+       2/2         3.39     1.70    0.03%      0.11     0.05             _zsh_autosuggest_bound_1_user:_zsh_highlight_widget_zle-line-finish [178]
+
+-----------------------------------------------------------------------------------
+
+      66/66        6.66     0.10    0.05%      6.66     0.10             _zsh_highlight [28]
+60)   66           6.66     0.10    0.05%      6.66     0.10    0.05%  -fast-highlight-string-process
+
+-----------------------------------------------------------------------------------
+
+       1/1         6.65     6.65    0.05%      6.65     6.65             _p9k_do_dump [162]
+61)    1           6.65     6.65    0.05%      6.65     6.65    0.05%  _p9k_dump_instant_prompt
+
+-----------------------------------------------------------------------------------
+
+       1/1         6.18     6.18    0.05%      0.16     0.16             (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50] [10]
+161)    1           6.18     6.18    0.05%      0.16     0.16    0.00%  prompt_powerlevel9k_setup
+       1/6         0.02     0.02    0.00%      0.02     0.02             _p9k_restore_special_params [168]
+       1/2         6.00     6.00    0.05%      0.04     0.04             _p9k_setup [201]
+
+-----------------------------------------------------------------------------------
+
+       1/2         6.00     6.00    0.05%      0.04     0.04             prompt_powerlevel9k_setup [161]
+       1/2         0.02     0.02    0.00%      0.02     0.02             (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50] [10]
+201)    2           6.03     3.01    0.05%      0.06     0.03    0.00%  _p9k_setup
+       1/1         5.96     5.96    0.04%      0.16     0.16             prompt_powerlevel9k_teardown [164]
+
+-----------------------------------------------------------------------------------
+
+       1/1         5.96     5.96    0.04%      0.16     0.16             _p9k_setup [201]
+164)    1           5.96     5.96    0.04%      0.16     0.16    0.00%  prompt_powerlevel9k_teardown
+       1/6         0.01     0.01    0.00%      0.01     0.01             _p9k_restore_special_params [168]
+       2/14        5.80     2.90    0.04%      5.80     2.90             add-zsh-hook [59]
+
+-----------------------------------------------------------------------------------
+
+      33/33        5.84     0.18    0.04%      5.84     0.18             .autocomplete.async.list-choices.main-complete [66]
+67)   33           5.84     0.18    0.04%      5.84     0.18    0.04%  (anon) [:432]
+
+-----------------------------------------------------------------------------------
+
+      71/180       2.78     0.04    0.02%      2.78     0.04             _zsh_autosuggest_widget_modify [43]
+      62/180       1.72     0.03    0.01%      1.72     0.03             _zsh_autosuggest_widget_suggest [70]
+      45/180       1.16     0.03    0.01%      1.16     0.03             .autocomplete.async.complete.fd-widget.inner [13]
+       2/180       0.08     0.04    0.00%      0.08     0.04             _zsh_autosuggest_widget_clear [153]
+68)  180           5.75     0.03    0.04%      5.75     0.03    0.04%  _zsh_autosuggest_highlight_apply
+
+-----------------------------------------------------------------------------------
+
+      66/66        5.70     0.09    0.04%      5.70     0.09             -fast-highlight-process [15]
+69)   66           5.70     0.09    0.04%      5.70     0.09    0.04%  -fast-highlight-main-type
+
+-----------------------------------------------------------------------------------
+
+      66/68        5.06     0.08    0.04%      5.06     0.08             .autocomplete.async.complete [38]
+       2/68        0.38     0.19    0.00%      0.38     0.19             .autocomplete.async.clear [151]
+71)   68           5.45     0.08    0.04%      5.45     0.08    0.04%  .autocomplete.async.stop
+
+-----------------------------------------------------------------------------------
+
+       2/2         5.41     2.71    0.04%      0.59     0.29             .autocomplete.__init__ [21]
+131)    2           5.41     2.71    0.04%      0.59     0.29    0.00%  .autocomplete.config
+       2/67        4.82     2.41    0.04%      4.82     2.41             is-at-least [34]
+
+-----------------------------------------------------------------------------------
+
+      57/57        5.02     0.09    0.04%      5.02     0.09             -fast-highlight-process [15]
+75)   57           5.02     0.09    0.04%      5.02     0.09    0.04%  -fast-highlight-check-path
+
+-----------------------------------------------------------------------------------
+
+       2/10        0.30     0.15    0.00%      0.30     0.15             _p9k_precmd_impl [116]
+76)   10           4.80     0.48    0.04%      4.80     0.48    0.04%  _p9k_worker_receive
+
+-----------------------------------------------------------------------------------
+
+105)   15           4.15     0.28    0.03%      1.65     0.11    0.01%  _p9k_on_expand
+       2/2         0.04     0.02    0.00%      0.04     0.02             _p9k_should_dump [218]
+      10/355       0.21     0.02    0.00%      0.21     0.02             _p9k_display_segment [47]
+       1/1         0.62     0.62    0.00%      0.36     0.36             _p9k_wrap_widgets [140]
+       1/1         1.62     1.62    0.01%      1.62     1.62             _p9k_clear_instant_prompt [107]
+
+-----------------------------------------------------------------------------------
+
+      49/49        3.87     0.08    0.03%      3.87     0.08             _path_files [11]
+78)   49           3.87     0.08    0.03%      3.87     0.08    0.03%  _list_files
+
+-----------------------------------------------------------------------------------
+
+       1/1         3.68     3.68    0.03%      3.68     3.68             .autocomplete.recent-dirs.precmd [39]
+80)    1           3.68     3.68    0.03%      3.68     3.68    0.03%  chpwd_recent_filehandler
+
+-----------------------------------------------------------------------------------
+
+86)    2           3.61     1.81    0.03%      3.29     1.64    0.02%  (anon) [/Users/duuta/.p10k.zsh:21]
+       2/2         0.32     0.16    0.00%      0.32     0.16             p10k [144]
+
+-----------------------------------------------------------------------------------
+
+     191/191       3.50     0.02    0.03%      3.50     0.02             _zsh_autosuggest_bind_widget [48]
+82)  191           3.50     0.02    0.03%      3.50     0.02    0.03%  _zsh_autosuggest_incr_bind_count
+
+-----------------------------------------------------------------------------------
+
+       2/2         3.39     1.70    0.03%      0.11     0.05             azhw:zle-line-finish [114]
+178)    2           3.39     1.70    0.03%      0.11     0.05    0.00%  _zsh_autosuggest_bound_1_user:_zsh_highlight_widget_zle-line-finish
+       2/71        3.28     1.64    0.02%      0.19     0.10             _zsh_autosuggest_widget_modify [43]
+
+-----------------------------------------------------------------------------------
+
+       1/1         3.36     3.36    0.03%      0.59     0.59             _p9k_init [123]
+130)    1           3.36     3.36    0.03%      0.59     0.59    0.00%  _p9k_restore_state
+       1/1         2.77     2.77    0.02%      2.77     2.77             _p9k_restore_state_impl [93]
+
+-----------------------------------------------------------------------------------
+
+      15/17        3.14     0.21    0.02%      3.14     0.21             _autocomplete.unambiguous [83]
+       2/17        0.05     0.02    0.00%      0.05     0.02             autocomplete:_approximate:old [133]
+87)   17           3.19     0.19    0.02%      3.19     0.19    0.02%  _requested
+
+-----------------------------------------------------------------------------------
+
+      33/33        2.95     0.09    0.02%      1.77     0.05             .autocomplete.async.list-choices.main-complete [66]
+104)   33           2.95     0.09    0.02%      1.77     0.05    0.01%  .autocomplete.async.list-choices.max-lines
+      33/33        1.19     0.04    0.01%      1.19     0.04             zsh_math_func_min [117]
+
+-----------------------------------------------------------------------------------
+
+      66/66        2.93     0.04    0.02%      2.93     0.04             _zsh_highlight [28]
+89)   66           2.93     0.04    0.02%      2.93     0.04    0.02%  -fast-highlight-init
+
+-----------------------------------------------------------------------------------
+
+      61/73        1.74     0.03    0.01%      1.74     0.03             _redirect [79]
+      12/73        1.06     0.09    0.01%      1.06     0.09             _normal [112]
+92)   73           2.80     0.04    0.02%      2.80     0.04    0.02%  _set_command
+
+-----------------------------------------------------------------------------------
+
+       1/1         2.78     2.78    0.02%      0.16     0.16             _p9k_do_dump [162]
+163)    1           2.78     2.78    0.02%      0.16     0.16    0.00%  _p9k_set_instant_prompt
+       1/3         2.62     2.62    0.02%      0.97     0.97             _p9k_set_prompt [85]
+
+-----------------------------------------------------------------------------------
+
+       1/1         2.77     2.77    0.02%      2.77     2.77             _p9k_restore_state [130]
+93)    1           2.77     2.77    0.02%      2.77     2.77    0.02%  _p9k_restore_state_impl
+
+-----------------------------------------------------------------------------------
+
+       4/29        0.44     0.11    0.00%      0.08     0.02             prompt_prompt_char [169]
+       4/29        0.41     0.10    0.00%      0.08     0.02             prompt_context [157]
+       3/29        0.27     0.09    0.00%      0.08     0.03             prompt_dir [115]
+       2/29        0.21     0.10    0.00%      0.04     0.02             prompt_virtualenv [198]
+       2/29        0.20     0.10    0.00%      0.04     0.02             prompt_status [205]
+       2/29        0.20     0.10    0.00%      0.04     0.02             prompt_time [196]
+       1/29        0.11     0.11    0.00%      0.02     0.02             prompt_direnv [212]
+       1/29        0.10     0.10    0.00%      0.02     0.02             instant_prompt_toolbox [236]
+       1/29        0.09     0.09    0.00%      0.02     0.02             instant_prompt_vim_shell [277]
+       1/29        0.09     0.09    0.00%      0.02     0.02             instant_prompt_prompt_char [259]
+       1/29        0.09     0.09    0.00%      0.02     0.02             instant_prompt_xplr [276]
+       1/29        0.09     0.09    0.00%      0.02     0.02             instant_prompt_midnight_commander [280]
+       1/29        0.09     0.09    0.00%      0.02     0.02             prompt_background_jobs [213]
+       1/29        0.07     0.07    0.00%      0.02     0.02             instant_prompt_ranger [248]
+       1/29        0.07     0.07    0.00%      0.02     0.02             instant_prompt_nix_shell [273]
+       1/29        0.07     0.07    0.00%      0.02     0.02             instant_prompt_time [223]
+       1/29        0.07     0.07    0.00%      0.02     0.02             instant_prompt_nnn [249]
+       1/29        0.07     0.07    0.00%      0.02     0.02             instant_prompt_lf [279]
+132)   29           2.75     0.09    0.02%      0.57     0.02    0.00%  _p9k_prompt_segment
+       8/8         0.62     0.08    0.00%      0.27     0.03             _p9k_left_prompt_segment [149]
+      21/21        1.55     0.07    0.01%      0.66     0.03             _p9k_right_prompt_segment [129]
+
+-----------------------------------------------------------------------------------
+
+141)    2           2.65     1.33    0.02%      0.35     0.17    0.00%  _zsh_autosuggest_bound_1_accept-line
+       2/2         2.30     1.15    0.02%      0.22     0.11             _zsh_autosuggest_widget_clear [153]
+
+-----------------------------------------------------------------------------------
+
+       1/1         2.59     2.59    0.02%      2.59     2.59             gitstatus_start_p9k_ [136]
+94)    1           2.59     2.59    0.02%      2.59     2.59    0.02%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:597]
+
+-----------------------------------------------------------------------------------
+
+       2/2         2.40     1.20    0.02%      0.11     0.06             _zsh_autosuggest_invoke_original_widget [33]
+176)    2           2.40     1.20    0.02%      0.11     0.06    0.00%  _zsh_highlight_widget_zle-line-finish
+       2/138       2.29     1.15    0.02%      0.32     0.16             _zsh_highlight [28]
+
+-----------------------------------------------------------------------------------
+
+       8/8         2.39     0.30    0.02%      2.39     0.30             autocomplete:_main_complete:old [22]
+96)    8           2.39     0.30    0.02%      2.39     0.30    0.02%  _prefix
+
+-----------------------------------------------------------------------------------
+
+      69/69        2.38     0.03    0.02%      2.38     0.03             _p9k_widget_hook [25]
+97)   69           2.38     0.03    0.02%      2.38     0.03    0.02%  _p9k_deschedule_redraw
+
+-----------------------------------------------------------------------------------
+
+      62/62        2.37     0.04    0.02%      2.37     0.04             _zsh_autosuggest_widget_suggest [70]
+98)   62           2.37     0.04    0.02%      2.37     0.04    0.02%  _zsh_autosuggest_suggest
+
+-----------------------------------------------------------------------------------
+
+       2/2         2.30     1.15    0.02%      0.22     0.11             _zsh_autosuggest_bound_1_accept-line [141]
+153)    2           2.30     1.15    0.02%      0.22     0.11    0.00%  _zsh_autosuggest_widget_clear
+       2/180       0.08     0.04    0.00%      0.08     0.04             _zsh_autosuggest_highlight_apply [68]
+       2/135       0.11     0.06    0.00%      0.11     0.06             _zsh_autosuggest_highlight_reset [56]
+       2/2         1.89     0.95    0.01%      0.10     0.05             _zsh_autosuggest_clear [179]
+
+-----------------------------------------------------------------------------------
+
+      73/73        2.20     0.03    0.02%      2.20     0.03             autocomplete:_complete:old [74]
+99)   73           2.20     0.03    0.02%      2.20     0.03    0.02%  _first
+
+-----------------------------------------------------------------------------------
+
+      69/69        2.20     0.03    0.02%      2.20     0.03             _p9k_widget_hook [25]
+100)   69           2.20     0.03    0.02%      2.20     0.03    0.02%  _p9k_check_visual_mode
+
+-----------------------------------------------------------------------------------
+
+       2/3         1.93     0.96    0.01%      1.12     0.56             _p9k_set_prompt [85]
+       1/3         0.24     0.24    0.00%      0.11     0.11             instant_prompt_dir [258]
+115)    3           2.16     0.72    0.02%      1.23     0.41    0.01%  prompt_dir
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_background [275]
+       2/23        0.03     0.02    0.00%      0.03     0.02             _p9k_escape [142]
+       3/3         0.05     0.02    0.00%      0.05     0.02             _p9k_foreground [211]
+       3/3         0.05     0.02    0.00%      0.05     0.02             _p9k_escape_style [207]
+       3/3         0.06     0.02    0.00%      0.06     0.02             _p9k_param [200]
+       2/2         0.07     0.04    0.00%      0.07     0.04             _p9k_cache_ephemeral_set [192]
+       4/4         0.09     0.02    0.00%      0.09     0.02             _p9k_color [181]
+       2/4         0.11     0.06    0.00%      0.11     0.06             _p9k_prompt_length [125]
+       6/6         0.17     0.03    0.00%      0.17     0.03             _p9k_cache_ephemeral_get [159]
+       3/29        0.27     0.09    0.00%      0.08     0.03             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         2.14     2.14    0.02%      2.14     2.14             .autocomplete.__init__.precmd [145]
+101)    1           2.14     2.14    0.02%      2.14     2.14    0.02%  .autocomplete.config.precmd
+
+-----------------------------------------------------------------------------------
+
+       2/4         1.35     0.67    0.01%      0.18     0.09             _p9k_widget_zle-line-finish [182]
+       2/4         0.76     0.38    0.01%      0.12     0.06             _p9k_widget_zle-line-init [206]
+147)    4           2.11     0.53    0.02%      0.30     0.07    0.00%  _p9k_widget
+       4/69        1.81     0.45    0.01%      1.00     0.25             _p9k_widget_hook [25]
+
+-----------------------------------------------------------------------------------
+
+      66/66        2.08     0.03    0.02%      2.08     0.03             _zsh_highlight_buffer_modified [72]
+102)   66           2.08     0.03    0.02%      2.08     0.03    0.02%  _zsh_highlight_cursor_moved
+
+-----------------------------------------------------------------------------------
+
+      45/45        2.03     0.05    0.02%      2.03     0.05             .autocomplete.async.list-choices.completion-widget [54]
+103)   45           2.03     0.05    0.02%      2.03     0.05    0.02%  .autocomplete.async.sufficient-input
+
+-----------------------------------------------------------------------------------
+
+       2/2         1.89     0.95    0.01%      0.10     0.05             _zsh_autosuggest_widget_clear [153]
+179)    2           1.89     0.95    0.01%      0.10     0.05    0.00%  _zsh_autosuggest_clear
+       2/73        1.79     0.90    0.01%      0.58     0.29             _zsh_autosuggest_invoke_original_widget [33]
+
+-----------------------------------------------------------------------------------
+
+      45/45        1.65     0.04    0.01%      1.65     0.04             .autocomplete.recent_paths.add [81]
+106)   45           1.65     0.04    0.01%      1.65     0.04    0.01%  .autocomplete.recent_paths.trim
+
+-----------------------------------------------------------------------------------
+
+       1/1         1.62     1.62    0.01%      1.62     1.62             _p9k_on_expand [105]
+107)    1           1.62     1.62    0.01%      1.62     1.62    0.01%  _p9k_clear_instant_prompt
+
+-----------------------------------------------------------------------------------
+
+      21/21        1.55     0.07    0.01%      0.66     0.03             _p9k_prompt_segment [132]
+129)   21           1.55     0.07    0.01%      0.66     0.03    0.00%  _p9k_right_prompt_segment
+      14/23        0.20     0.01    0.00%      0.20     0.01             _p9k_escape [142]
+      21/33        0.69     0.03    0.01%      0.69     0.03             _p9k_cache_get [120]
+
+-----------------------------------------------------------------------------------
+
+       6/10        1.25     0.21    0.01%      0.87     0.14             .autocomplete.async.precmd [171]
+       1/10        0.33     0.33    0.00%      0.33     0.33             add-zle-hook-widget [109]
+       3/10        0.26     0.09    0.00%      0.26     0.09             _p9k_wrap_widgets [140]
+109)   10           1.51     0.15    0.01%      1.46     0.15    0.01%  add-zle-hook-widget
+       1/1         0.05     0.05    0.00%      0.05     0.05             (anon) [/opt/homebrew/Cellar/zsh/5.9/share/zsh/functions/add-zle-hook-widget:28] [209]
+       1/10        0.33     0.33    0.00%      0.33     0.33             add-zle-hook-widget [109]
+
+-----------------------------------------------------------------------------------
+
+       8/14        0.84     0.11    0.01%      0.29     0.04             .autocomplete.key-binding [126]
+       6/14        0.62     0.10    0.00%      0.17     0.03             .autocomplete.key-binding.precmd [138]
+137)   14           1.46     0.10    0.01%      0.46     0.03    0.00%  .autocomplete.key-binding.bind-menu
+      28/34        1.00     0.04    0.01%      1.00     0.04             .autocomplete.key-binding.bind [113]
+
+-----------------------------------------------------------------------------------
+
+       8/8         1.45     0.18    0.01%      1.45     0.18             autocomplete:_main_complete:old [22]
+110)    8           1.45     0.18    0.01%      1.45     0.18    0.01%  _ignored
+
+-----------------------------------------------------------------------------------
+
+       2/2         1.44     0.72    0.01%      0.09     0.05             azhw:zle-line-finish [114]
+182)    2           1.44     0.72    0.01%      0.09     0.05    0.00%  _p9k_widget_zle-line-finish
+       2/4         1.35     0.67    0.01%      0.18     0.09             _p9k_widget [147]
+
+-----------------------------------------------------------------------------------
+
+       1/1         1.43     1.43    0.01%      0.13     0.13             .autocomplete.__init__.precmd [145]
+171)    1           1.43     1.43    0.01%      0.13     0.13    0.00%  .autocomplete.async.precmd
+       1/14        0.06     0.06    0.00%      0.06     0.06             add-zsh-hook [59]
+       6/10        1.25     0.21    0.01%      0.87     0.14             add-zle-hook-widget [109]
+
+-----------------------------------------------------------------------------------
+
+      28/34        1.00     0.04    0.01%      1.00     0.04             .autocomplete.key-binding.bind-menu [137]
+       4/34        0.17     0.04    0.00%      0.17     0.04             .autocomplete.key-binding [126]
+       2/34        0.09     0.04    0.00%      0.09     0.04             .autocomplete.key-binding.precmd [138]
+113)   34           1.26     0.04    0.01%      1.26     0.04    0.01%  .autocomplete.key-binding.bind
+
+-----------------------------------------------------------------------------------
+
+       2/2         1.21     0.60    0.01%      0.12     0.06             _zsh_autosuggest_invoke_original_widget [33]
+173)    2           1.21     0.60    0.01%      0.12     0.06    0.00%  _zsh_highlight_widget_orig-s000-r519-accept-line
+       2/70        1.09     0.54    0.01%      0.14     0.07             _zsh_highlight_call_widget [64]
+
+-----------------------------------------------------------------------------------
+
+      33/33        1.19     0.04    0.01%      1.19     0.04             .autocomplete.async.list-choices.max-lines [104]
+117)   33           1.19     0.04    0.01%      1.19     0.04    0.01%  zsh_math_func_min
+
+-----------------------------------------------------------------------------------
+
+      33/33        1.13     0.03    0.01%      1.13     0.03             autocomplete:_main_complete:new [52]
+119)   33           1.13     0.03    0.01%      1.13     0.03    0.01%  (anon) [:111]
+
+-----------------------------------------------------------------------------------
+
+      21/33        0.69     0.03    0.01%      0.69     0.03             _p9k_right_prompt_segment [129]
+       8/33        0.28     0.03    0.00%      0.28     0.03             _p9k_left_prompt_segment [149]
+       2/33        0.06     0.03    0.00%      0.06     0.03             _p9k_cache_stat_get [146]
+       2/33        0.05     0.02    0.00%      0.05     0.02             prompt_status [205]
+120)   33           1.07     0.03    0.01%      1.07     0.03    0.01%  _p9k_cache_get
+
+-----------------------------------------------------------------------------------
+
+      33/33        1.00     0.03    0.01%      1.00     0.03             autocomplete:_main_complete:old [22]
+121)   33           1.00     0.03    0.01%      1.00     0.03    0.01%  autocomplete:config:completer
+
+-----------------------------------------------------------------------------------
+
+      10/10        0.89     0.09    0.01%      0.89     0.09             _approximate [95]
+124)   10           0.89     0.09    0.01%      0.89     0.09    0.01%  _autocomplete.is_glob
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.88     0.88    0.01%      0.75     0.75             _p9k_init [123]
+128)    1           0.88     0.88    0.01%      0.75     0.75    0.01%  _p9k_worker_start
+       1/14        0.14     0.14    0.00%      0.14     0.14             add-zsh-hook [59]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.86     0.43    0.01%      0.21     0.11             _p9k_precmd_impl [116]
+154)    2           0.86     0.43    0.01%      0.21     0.11    0.00%  _p9k_vcs_gitstatus
+       2/2         0.03     0.02    0.00%      0.03     0.02             _p9k_maybe_ignore_git_repo [224]
+       2/2         0.09     0.05    0.00%      0.09     0.05             _p9k_vcs_status_for_dir [184]
+       2/2         0.53     0.26    0.00%      0.26     0.13             gitstatus_query_p9k_ [150]
+
+-----------------------------------------------------------------------------------
+
+       2/4         0.72     0.36    0.01%      0.72     0.36             (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:3] [9]
+       2/4         0.11     0.06    0.00%      0.11     0.06             prompt_dir [115]
+125)    4           0.83     0.21    0.01%      0.83     0.21    0.01%  _p9k_prompt_length
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.81     0.40    0.01%      0.05     0.03             azhw:zle-line-init [127]
+206)    2           0.81     0.40    0.01%      0.05     0.03    0.00%  _p9k_widget_zle-line-init
+       2/4         0.76     0.38    0.01%      0.12     0.06             _p9k_widget [147]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.70     0.35    0.01%      0.23     0.11             azhw:zle-line-finish [114]
+151)    2           0.70     0.35    0.01%      0.23     0.11    0.00%  .autocomplete.async.clear
+       2/4         0.09     0.04    0.00%      0.09     0.04             .autocomplete.async.reset-context [158]
+       2/68        0.38     0.19    0.00%      0.38     0.19             .autocomplete.async.stop [71]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.62     0.62    0.00%      0.36     0.36             _p9k_on_expand [105]
+140)    1           0.62     0.62    0.00%      0.36     0.36    0.00%  _p9k_wrap_widgets
+       3/10        0.26     0.09    0.00%      0.26     0.09             add-zle-hook-widget [109]
+
+-----------------------------------------------------------------------------------
+
+       8/8         0.62     0.08    0.00%      0.27     0.03             _p9k_prompt_segment [132]
+149)    8           0.62     0.08    0.00%      0.27     0.03    0.00%  _p9k_left_prompt_segment
+       5/23        0.08     0.02    0.00%      0.08     0.02             _p9k_escape [142]
+       8/33        0.28     0.03    0.00%      0.28     0.03             _p9k_cache_get [120]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.60     0.30    0.00%      0.04     0.02             _p9k_set_prompt [85]
+219)    2           0.60     0.30    0.00%      0.04     0.02    0.00%  prompt_pyenv
+       2/2         0.56     0.28    0.00%      0.07     0.04             _p9k_pyenv_compute [191]
+
+-----------------------------------------------------------------------------------
+
+       1/2         0.31     0.31    0.00%      0.10     0.10             _p9k_set_prompt [85]
+       1/2         0.27     0.27    0.00%      0.07     0.07             instant_prompt_context [228]
+157)    2           0.58     0.29    0.00%      0.17     0.09    0.00%  prompt_context
+       4/29        0.41     0.10    0.00%      0.08     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.58     0.29    0.00%      0.14     0.07             _p9k_set_prompt [85]
+169)    2           0.58     0.29    0.00%      0.14     0.07    0.00%  prompt_prompt_char
+       4/29        0.44     0.11    0.00%      0.08     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.56     0.28    0.00%      0.07     0.04             prompt_pyenv [219]
+191)    2           0.56     0.28    0.00%      0.07     0.04    0.00%  _p9k_pyenv_compute
+       2/2         0.48     0.24    0.00%      0.08     0.04             _p9k_upglob [189]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.53     0.26    0.00%      0.26     0.13             _p9k_vcs_gitstatus [154]
+150)    2           0.53     0.26    0.00%      0.26     0.13    0.00%  gitstatus_query_p9k_
+       2/2         0.27     0.13    0.00%      0.20     0.10             _gitstatus_process_response_p9k_ [155]
+
+-----------------------------------------------------------------------------------
+
+134)    2           0.52     0.26    0.00%      0.52     0.26    0.00%  (anon) [/Users/duuta/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh:458]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.48     0.24    0.00%      0.08     0.04             _p9k_pyenv_compute [191]
+189)    2           0.48     0.24    0.00%      0.08     0.04    0.00%  _p9k_upglob
+       3/3         0.40     0.13    0.00%      0.40     0.13             _p9k_glob [139]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.48     0.24    0.00%      0.48     0.24             _p9k_precmd_impl [116]
+135)    2           0.48     0.24    0.00%      0.48     0.24    0.00%  _p9k_fetch_cwd
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.44     0.22    0.00%      0.08     0.04             _p9k_set_prompt [85]
+188)    2           0.44     0.22    0.00%      0.08     0.04    0.00%  prompt_kubecontext
+       2/2         0.36     0.18    0.00%      0.30     0.15             _p9k_cache_stat_get [146]
+
+-----------------------------------------------------------------------------------
+
+       3/3         0.40     0.13    0.00%      0.40     0.13             _p9k_upglob [189]
+139)    3           0.40     0.13    0.00%      0.40     0.13    0.00%  _p9k_glob
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.36     0.18    0.00%      0.30     0.15             prompt_kubecontext [188]
+146)    2           0.36     0.18    0.00%      0.30     0.15    0.00%  _p9k_cache_stat_get
+       2/33        0.06     0.03    0.00%      0.06     0.03             _p9k_cache_get [120]
+
+-----------------------------------------------------------------------------------
+
+      14/23        0.20     0.01    0.00%      0.20     0.01             _p9k_right_prompt_segment [129]
+       5/23        0.08     0.02    0.00%      0.08     0.02             _p9k_left_prompt_segment [149]
+       2/23        0.03     0.02    0.00%      0.03     0.02             instant_prompt_time [223]
+       2/23        0.03     0.02    0.00%      0.03     0.02             prompt_dir [115]
+142)   23           0.35     0.02    0.00%      0.35     0.02    0.00%  _p9k_escape
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.34     0.34    0.00%      0.34     0.34             _p9k_init [123]
+143)    1           0.34     0.34    0.00%      0.34     0.34    0.00%  _p9k_init_vars
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.32     0.16    0.00%      0.32     0.16             (anon) [/Users/duuta/.p10k.zsh:21] [86]
+144)    2           0.32     0.16    0.00%      0.32     0.16    0.00%  p10k
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.31     0.16    0.00%      0.06     0.03             _p9k_set_prompt [85]
+205)    2           0.31     0.16    0.00%      0.06     0.03    0.00%  prompt_status
+       2/33        0.05     0.02    0.00%      0.05     0.02             _p9k_cache_get [120]
+       2/29        0.20     0.10    0.00%      0.04     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.29     0.29    0.00%      0.02     0.02             _p9k_set_prompt [85]
+228)    1           0.29     0.29    0.00%      0.02     0.02    0.00%  instant_prompt_context
+       1/2         0.27     0.27    0.00%      0.07     0.07             prompt_context [157]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.28     0.28    0.00%      0.11     0.11             .autocomplete.__init__.precmd [145]
+175)    1           0.28     0.28    0.00%      0.11     0.11    0.00%  .autocomplete.widget.precmd
+       7/7         0.16     0.02    0.00%      0.16     0.02             .autocomplete.widget.c [160]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.27     0.14    0.00%      0.07     0.03             _p9k_set_prompt [85]
+198)    2           0.27     0.14    0.00%      0.07     0.03    0.00%  prompt_virtualenv
+       2/29        0.21     0.10    0.00%      0.04     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+148)    2           0.27     0.14    0.00%      0.27     0.14    0.00%  -fast-highlight-fill-option-variables
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.27     0.13    0.00%      0.20     0.10             gitstatus_query_p9k_ [150]
+155)    2           0.27     0.13    0.00%      0.20     0.10    0.00%  _gitstatus_process_response_p9k_
+       2/2         0.07     0.03    0.00%      0.07     0.03             _gitstatus_clear_p9k_ [197]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.27     0.13    0.00%      0.07     0.03             _p9k_set_prompt [85]
+196)    2           0.27     0.13    0.00%      0.07     0.03    0.00%  prompt_time
+       2/29        0.20     0.10    0.00%      0.04     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.26     0.26    0.00%      0.02     0.02             _p9k_set_prompt [85]
+258)    1           0.26     0.26    0.00%      0.02     0.02    0.00%  instant_prompt_dir
+       1/3         0.24     0.24    0.00%      0.11     0.11             prompt_dir [115]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.23     0.23    0.00%      0.23     0.23             autocomplete:_main_complete:new [52]
+152)    1           0.23     0.23    0.00%      0.23     0.23    0.00%  (anon) [/Users/duuta/.zsh/plugins/zsh-autocomplete/functions/widget/.autocomplete.history-search.completion-widget:111]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.22     0.22    0.00%      0.15     0.15             .autocomplete.__init__.precmd [145]
+167)    1           0.22     0.22    0.00%      0.15     0.15    0.00%  (anon) [:27]
+       1/14        0.06     0.06    0.00%      0.06     0.06             add-zsh-hook [59]
+
+-----------------------------------------------------------------------------------
+
+       6/6         0.18     0.03    0.00%      0.18     0.03             .autocomplete.widget [24]
+156)    6           0.18     0.03    0.00%      0.18     0.03    0.00%  .autocomplete.widget.z
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.17     0.17    0.00%      0.11     0.11             _p9k_init_vcs [199]
+177)    1           0.17     0.17    0.00%      0.11     0.11    0.00%  _p9k_vcs_info_init
+       3/3         0.07     0.02    0.00%      0.07     0.02             _p9k_get_icon [195]
+
+-----------------------------------------------------------------------------------
+
+       2/4         0.09     0.04    0.00%      0.09     0.04             .autocomplete.async.clear [151]
+       2/4         0.08     0.04    0.00%      0.08     0.04             azhw:zle-line-init [127]
+158)    4           0.17     0.04    0.00%      0.17     0.04    0.00%  .autocomplete.async.reset-context
+
+-----------------------------------------------------------------------------------
+
+       6/6         0.17     0.03    0.00%      0.17     0.03             prompt_dir [115]
+159)    6           0.17     0.03    0.00%      0.17     0.03    0.00%  _p9k_cache_ephemeral_get
+
+-----------------------------------------------------------------------------------
+
+185)    2           0.17     0.08    0.00%      0.09     0.04    0.00%  _p9k_preexec1
+       2/6         0.08     0.04    0.00%      0.08     0.04             _p9k_restore_special_params [168]
+
+-----------------------------------------------------------------------------------
+
+       7/7         0.16     0.02    0.00%      0.16     0.02             .autocomplete.widget.precmd [175]
+160)    7           0.16     0.02    0.00%      0.16     0.02    0.00%  .autocomplete.widget.c
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.15     0.08    0.00%      0.15     0.08             .autocomplete.__init__ [21]
+165)    2           0.15     0.08    0.00%      0.15     0.08    0.00%  .autocomplete.compinit
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.15     0.15    0.00%      0.05     0.05             _p9k_set_prompt [85]
+212)    1           0.15     0.15    0.00%      0.05     0.05    0.00%  prompt_direnv
+       1/29        0.11     0.11    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/6         0.08     0.04    0.00%      0.08     0.04             _p9k_preexec1 [185]
+       2/6         0.05     0.02    0.00%      0.05     0.02             _p9k_precmd [170]
+       1/6         0.02     0.02    0.00%      0.02     0.02             prompt_powerlevel9k_setup [161]
+       1/6         0.01     0.01    0.00%      0.01     0.01             prompt_powerlevel9k_teardown [164]
+168)    6           0.15     0.03    0.00%      0.15     0.03    0.00%  _p9k_restore_special_params
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.14     0.14    0.00%      0.03     0.03             _p9k_set_prompt [85]
+223)    1           0.14     0.14    0.00%      0.03     0.03    0.00%  instant_prompt_time
+       2/23        0.03     0.02    0.00%      0.03     0.02             _p9k_escape [142]
+       1/29        0.07     0.07    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.13     0.13    0.00%      0.04     0.04             _p9k_set_prompt [85]
+213)    1           0.13     0.13    0.00%      0.04     0.04    0.00%  prompt_background_jobs
+       1/29        0.09     0.09    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+172)    1           0.12     0.12    0.00%      0.12     0.12    0.00%  _p9k_precmd_first
+
+-----------------------------------------------------------------------------------
+
+174)    2           0.12     0.06    0.00%      0.12     0.06    0.00%  (anon) [/Users/duuta/.zsh/plugins/fast-syntax-highlighting/functions/fast-highlight:40]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.12     0.12    0.00%      0.02     0.02             _p9k_set_prompt [85]
+236)    1           0.12     0.12    0.00%      0.02     0.02    0.00%  instant_prompt_toolbox
+       1/29        0.10     0.10    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.11     0.11    0.00%      0.02     0.02             _p9k_set_prompt [85]
+277)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_vim_shell
+       1/29        0.09     0.09    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.11     0.11    0.00%      0.02     0.02             _p9k_set_prompt [85]
+259)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_prompt_char
+       1/29        0.09     0.09    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.11     0.11    0.00%      0.02     0.02             _p9k_set_prompt [85]
+276)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_xplr
+       1/29        0.09     0.09    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.11     0.11    0.00%      0.02     0.02             _p9k_set_prompt [85]
+280)    1           0.11     0.11    0.00%      0.02     0.02    0.00%  instant_prompt_midnight_commander
+       1/29        0.09     0.09    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.10     0.05    0.00%      0.10     0.05             _p9k_widget_hook [25]
+180)    2           0.10     0.05    0.00%      0.10     0.05    0.00%  _p9k_on_widget_zle-line-finish
+
+-----------------------------------------------------------------------------------
+
+       4/4         0.09     0.02    0.00%      0.09     0.02             prompt_dir [115]
+181)    4           0.09     0.02    0.00%      0.09     0.02    0.00%  _p9k_color
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.09     0.09    0.00%      0.02     0.02             _p9k_set_prompt [85]
+248)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_ranger
+       1/29        0.07     0.07    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.09     0.09    0.00%      0.09     0.09             _zsh_highlight_call_widget [64]
+183)    1           0.09     0.09    0.00%      0.09     0.09    0.00%  _autocomplete.history_lines.suffix
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.09     0.09    0.00%      0.02     0.02             _p9k_set_prompt [85]
+249)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_nnn
+       1/29        0.07     0.07    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.09     0.05    0.00%      0.09     0.05             _p9k_vcs_gitstatus [154]
+184)    2           0.09     0.05    0.00%      0.09     0.05    0.00%  _p9k_vcs_status_for_dir
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.09     0.09    0.00%      0.02     0.02             _p9k_set_prompt [85]
+273)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_nix_shell
+       1/29        0.07     0.07    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.09     0.09    0.00%      0.02     0.02             _p9k_set_prompt [85]
+279)    1           0.09     0.09    0.00%      0.02     0.02    0.00%  instant_prompt_lf
+       1/29        0.07     0.07    0.00%      0.02     0.02             _p9k_prompt_segment [132]
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.09     0.04    0.00%      0.09     0.04             .autocomplete.__init__ [21]
+186)    2           0.09     0.04    0.00%      0.09     0.04    0.00%  .autocomplete.recent-dirs
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.08     0.04    0.00%      0.08     0.04             .autocomplete.__init__ [21]
+187)    2           0.08     0.04    0.00%      0.08     0.04    0.00%  zmathfunc
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.08     0.04    0.00%      0.04     0.02             _p9k_precmd_impl [116]
+217)    2           0.08     0.04    0.00%      0.04     0.02    0.00%  _p9k_async_segments_compute
+       2/2         0.04     0.02    0.00%      0.04     0.02             _p9k_gcloud_prefetch [215]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.07     0.07    0.00%      0.07     0.07             _zsh_highlight [28]
+190)    1           0.07     0.07    0.00%      0.07     0.07    0.00%  _zsh_highlight_apply_zle_highlight
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.07     0.04    0.00%      0.07     0.04             prompt_dir [115]
+192)    2           0.07     0.04    0.00%      0.07     0.04    0.00%  _p9k_cache_ephemeral_set
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.07     0.04    0.00%      0.07     0.04             _p9k_precmd_impl [116]
+193)    2           0.07     0.04    0.00%      0.07     0.04    0.00%  _p9k_save_status
+
+-----------------------------------------------------------------------------------
+
+       2/3         0.05     0.02    0.00%      0.05     0.02             _p9k_init [123]
+       1/3         0.02     0.02    0.00%      0.02     0.02             _p9k_init_vcs [199]
+194)    3           0.07     0.02    0.00%      0.07     0.02    0.00%  _p9k_segment_in_use
+
+-----------------------------------------------------------------------------------
+
+       3/3         0.07     0.02    0.00%      0.07     0.02             _p9k_vcs_info_init [177]
+195)    3           0.07     0.02    0.00%      0.07     0.02    0.00%  _p9k_get_icon
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.07     0.03    0.00%      0.07     0.03             _gitstatus_process_response_p9k_ [155]
+197)    2           0.07     0.03    0.00%      0.07     0.03    0.00%  _gitstatus_clear_p9k_
+
+-----------------------------------------------------------------------------------
+
+       3/3         0.06     0.02    0.00%      0.06     0.02             prompt_dir [115]
+200)    3           0.06     0.02    0.00%      0.06     0.02    0.00%  _p9k_param
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.06     0.06    0.00%      0.06     0.06             _p9k_init [123]
+202)    1           0.06     0.06    0.00%      0.06     0.06    0.00%  _p9k_prompt_nix_shell_init
+
+-----------------------------------------------------------------------------------
+
+203)    2           0.06     0.03    0.00%      0.06     0.03    0.00%  _p9k_preexec2
+
+-----------------------------------------------------------------------------------
+
+       3/3         0.05     0.02    0.00%      0.05     0.02             prompt_dir [115]
+207)    3           0.05     0.02    0.00%      0.05     0.02    0.00%  _p9k_escape_style
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.05     0.03    0.00%      0.05     0.03             _p9k_precmd_impl [116]
+208)    2           0.05     0.03    0.00%      0.05     0.03    0.00%  _p9k_vcs_render
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.05     0.05    0.00%      0.05     0.05             add-zle-hook-widget [109]
+209)    1           0.05     0.05    0.00%      0.05     0.05    0.00%  (anon) [/opt/homebrew/Cellar/zsh/5.9/share/zsh/functions/add-zle-hook-widget:28]
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.05     0.05    0.00%      0.05     0.05             autocomplete:_main_complete:old [22]
+210)    1           0.05     0.05    0.00%      0.05     0.05    0.00%  .autocomplete.history-search.completion-widget.post
+
+-----------------------------------------------------------------------------------
+
+       3/3         0.05     0.02    0.00%      0.05     0.02             prompt_dir [115]
+211)    3           0.05     0.02    0.00%      0.05     0.02    0.00%  _p9k_foreground
+
+-----------------------------------------------------------------------------------
+
+214)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _zsh_highlight_preexec_hook
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.04     0.02    0.00%      0.04     0.02             _p9k_async_segments_compute [217]
+215)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _p9k_gcloud_prefetch
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.04     0.02    0.00%      0.04     0.02             _p9k_set_prompt [85]
+216)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  prompt_vcs
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.04     0.02    0.00%      0.04     0.02             _p9k_on_expand [105]
+218)    2           0.04     0.02    0.00%      0.04     0.02    0.00%  _p9k_should_dump
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.03     0.02    0.00%      0.03     0.02             _p9k_widget_hook [25]
+221)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  _p9k_on_widget_zle-line-init
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.03     0.02    0.00%      0.03     0.02             _p9k_set_prompt [85]
+222)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  prompt_command_execution_time
+
+-----------------------------------------------------------------------------------
+
+       2/2         0.03     0.02    0.00%      0.03     0.02             _p9k_vcs_gitstatus [154]
+224)    2           0.03     0.02    0.00%      0.03     0.02    0.00%  _p9k_maybe_ignore_git_repo
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.03     0.03    0.00%      0.03     0.03             (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:3] [9]
+225)    1           0.03     0.03    0.00%      0.03     0.03    0.00%  (anon) [/Users/duuta/.cache/p10k-instant-prompt-duuta.zsh:150]
+
+-----------------------------------------------------------------------------------
+
+226)    2           0.03     0.01    0.00%      0.03     0.01    0.00%  _p9k_do_nothing
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+227)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_direnv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+229)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_asdf_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_set_prompt [85]
+230)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  instant_prompt_status
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+233)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_haskell_stack_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+234)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_phpenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50] [10]
+235)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_init_ssh
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             (anon) [/Users/duuta/powerlevel10k/powerlevel10k.zsh-theme:50] [10]
+231)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_init_toolbox
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+232)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_gcloud_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+241)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_anaconda_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+240)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_virtualenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+239)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_scalaenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+238)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_aws_eb_env_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+237)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nodenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+242)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_taskwarrior_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+265)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_aws_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+243)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_vim_shell_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+244)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_midnight_commander_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+245)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_todo_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+246)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nodeenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+247)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_timewarrior_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+250)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_pyenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+251)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_goenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+252)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_ranger_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+253)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nnn_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+254)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_lf_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+255)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_xplr_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+256)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_fvm_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+257)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_jenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+260)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_plenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+261)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_toolbox_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+262)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_context_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+263)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_kubecontext_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+264)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_terraform_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+266)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_azure_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+267)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_google_app_cred_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+268)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_rbenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+269)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_rvm_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+272)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nvm_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+271)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_perlbrew_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+270)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_luaenv_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             prompt_dir [115]
+275)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_background
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+274)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_nordvpn_init
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_set_prompt [85]
+278)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  instant_prompt_direnv
+
+-----------------------------------------------------------------------------------
+
+       1/1         0.02     0.02    0.00%      0.02     0.02             _p9k_init [123]
+281)    1           0.02     0.02    0.00%      0.02     0.02    0.00%  _p9k_prompt_time_init
