@@ -8,13 +8,17 @@
 *.tar
 *.csv
 *.nwb
-*.conda
 *.ipynb_checkpoints
+
 
 # Folders 
 ppp0/data/
 csa/
 __pycache__
+.conda
+.idea
+.singularity
+
 
 # output files
 *.out
