@@ -13,7 +13,9 @@ from scipy.spatial.distance import pdist, squareform
 from tqdm import tqdm
 
 
+# Pathlib module gives a smarter way of working with paths
 def get_tag_paths(zebfolderpath):
+    # The '8' isn't very useful if you move to a different PC/file layout - is it the last [-1] you want?
     tag = zebfolderpath.split("/")[8]
 
     files = os.listdir(zebfolderpath)
@@ -343,24 +345,31 @@ def compute_ratio_corr(
         nncorr_dict[roi_idx] = nrcorr  # groups of near correlations
         rncorr_dict[roi_idx] = rncorr  # groups of random correlations
 
-    return ratioCorr, nnidx_dict, rnidx_dict 
+    return ratioCorr, nnidx_dict, rnidx_dict
 
     # need to run this for different vmax, vmin, mid=1 (first make a function initerim a class later)
 
 
 def main():
-    num_rois = 20000 
+    num_rois = 20000
     seed = None
     nnpop = 10
     rnpop = 10
+    # Again, Pathlib is nicer for paths and glob.
+    # If you need to reference an absolute path, define it near the
+    # Top of the file with a name in capitals SOURE_DIR="/camp/home/duuta/.../.../"
     sdir = "/camp/home/duuta/working/duuta/jobs/plots/checkRCregs/"
 
     for fpath in glob("/camp/home/duuta/working/duuta/ppp0/data/zebf*"):
         print("reading {fpath}..........")
 
+        # Comments should offer more info than just repeating the name of the function called.
+        # Either leave it out or say more "why" something is happening or relate to the bigger picture
         # get tag and paths
         tag, path0, path1 = get_tag_paths(fpath)
 
+        # Comments should offer more info than just repeating the name of the function called.
+        # e.g. "Process the data, removing invalid and unwanted elements"
         # read file paths
         x, y, _, d0 = read_data(path0, path1, num_rois=num_rois, scells=True)
         print("can read the file path... yes.... frantically reading files.....")

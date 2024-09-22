@@ -12,6 +12,10 @@ from scipy.io import loadmat
 from scipy.spatial.distance import pdist, squareform
 from tqdm import tqdm
 
+# Rather than have a copy of the file with one or two lines different, it would be better to add a parameter when calling
+# the code to say which reg to use "python check_the_heck_rc.py reg0" and use sys.argv[1] to get the reg to use
+# Alternatively use the argparse module for command line procesing (I think that is the modern one)
+
 
 def get_tag_paths(zebfolderpath):
     tag = zebfolderpath.split("/")[8]

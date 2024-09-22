@@ -101,6 +101,9 @@ def compute_render_ratio_corr(
         nncorr_dict[roi_idx] = nrcorr  # groups of near correlations
         rncorr_dict[roi_idx] = rncorr  # groups of random correlations
 
+    # If you comment out chunks of code, leave a note as to why (or remove it if it
+    # isn't needed - you have it in previous revisions in Git for safety)
+
     # srnr_arr = np.array(collect_nn_min_max) / np.array(collect_rn_min_max)
     # sPRN = round(np.percentile(srnr_arr, 90), 3)
     # filtered0 = [a for a in srnr_arr if a > 0 and a <= sPRN]
